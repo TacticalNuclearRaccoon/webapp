@@ -2420,489 +2420,638 @@
   "answers": [
     {
       "0": {
-        "question": "Une enquête a-t-elle été effectuée auprès des utilisateurs ?",
+        "question": "Est-ce que vous collectez des feedbacks après le lancement du produit?",
         "answer": "0"
       },
       "1": {
-        "question": "La version simplifiée et fonctionnelle du produit reflète-t-elle une hypothèse ?",
+        "question": "Avez-vous collecté des feedbacks avant le lancement du produit ?",
         "answer": "1"
       },
       "2": {
-        "question": "Les utilisateurs donnent-ils leurs avis sur le produit et ses fonctionnalités ?",
+        "question": "Est-ce que la date de lancement est réaliste ?",
         "answer": "0"
       },
       "3": {
-        "question": "La vision est-elle comprise de tous ?",
+        "question": "La date de lancement a-t-elle été vérifiée auprès des équipes de production ?",
         "answer": "1"
       },
       "4": {
-        "question": "La vision peut-elle être répétée en une seule phrase ?",
-        "answer": "0"
+        "question": "Est-ce que la date de lancement est prévu avant la fin des tests du produit ?",
+        "answer": "1"
       },
       "5": {
-        "question": "L'objectif du produit peut-il être réalisable dans une période d'un an ?",
+        "question": "Avez-vous prévu un plan d'action pour le jour du lancement du produit ?",
         "answer": "1"
       },
       "6": {
-        "question": "L'objectif du produit est-il compris de tous ?",
-        "answer": "1"
+        "question": "Est-ce que vous attendez des résultats de votre produit à court terme ?",
+        "answer": "0"
       },
       "7": {
-        "question": "Est-ce que quelqu'un décide de tout dans l'équipe ?",
+        "question": "Est-ce que vous attendez des résultats de votre produit à plus long terme ?",
         "answer": "1"
       },
       "8": {
-        "question": "Les utilisateurs sont-ils informés des nouvelles fonctionnalités du produit ?",
+        "question": "Pensez-vous créer un nouveau besoin ?",
         "answer": "1"
       },
       "9": {
-        "question": "Le produit est-il sous contrainte légale ?",
+        "question": "Avez-vous un échantillon représentatif de vos utilisateurs ?",
         "answer": "1"
       },
       "10": {
-        "question": "Le produit corrige-t-il d'autres problèmes ?",
-        "answer": "1"
+        "question": "Cet échantillon est-il représentatif de l'ensemble des utilisateurs ?",
+        "answer": "0"
       },
       "11": {
-        "question": "Y-a-t'il une majorité de managers parmi les utilisateurs ?",
+        "question": "Cet échantillon contient-il l'ensemble des catégories de vos utilisateurs ?",
         "answer": "1"
       },
       "12": {
-        "question": "Faites-vous varier votre panel d'utilisateurs interrogés chaque trimestre ?",
-        "answer": "1"
+        "question": "Avez-vous recours à d'autres sources d'informations qu'Internet pour mener votre recherche ?",
+        "answer": "0"
       },
       "13": {
-        "question": "Votre cible d'utilisateurs fait-elle partie du management ?",
+        "question": "Êtes-vous à l'écoute des tendances du marché ?",
         "answer": "1"
       },
       "14": {
-        "question": "La mise en place de votre produit est-elle en adéquation avec les retours des utilisateurs ?",
-        "answer": "1"
+        "question": "Prenez-vous en compte ces tendances dans votre stratégie produit ?",
+        "answer": "0"
       },
       "15": {
-        "question": "Le siège impose-t-il un processus métier ?",
+        "question": "Avez-vous une cible de marché ?",
         "answer": "1"
       },
       "16": {
-        "question": "La vision produit est-elle mise à jour régulièrement ? (environ tous les trimestres)",
-        "answer": "1"
+        "question": "Est-ce qu'elle est définit ?",
+        "answer": "0"
       },
       "17": {
-        "question": "Les utilisateurs acceptent-ils le changement continu ?",
+        "question": "Avez-vous des indicateurs sur le suivi de votre cible ?",
         "answer": "1"
       },
       "18": {
-        "question": "Les nouvelles fonctionnalités du produit sont-elles proposées au moins une fois par mois ?",
-        "answer": "1"
+        "question": "Connaissez-vous votre marché ?",
+        "answer": "0"
       },
       "19": {
-        "question": "Le produit est-il mis à jour toutes les semaines ?",
+        "question": "Connaissez-vous les tendances du moment sur votre marché ?",
         "answer": "1"
       },
       "20": {
-        "question": "Y'a-t-il plusieurs validations hiérarchiques pour faire évoluer le produit ?",
+        "question": "Votre produit est-il adapté aux tendances de votre marché ?",
         "answer": "1"
       },
       "21": {
-        "question": "Êtes-vous un manager ?",
+        "question": "Votre produit se démarque-t-il clairement des autres produits concurrents?",
         "answer": "1"
       },
       "22": {
-        "question": "Est-ce que votre produit a été *décidé* par une personne qui est en posture de *décideur* ?",
-        "answer": "1"
+        "question": "Connaissez-vous le marché concurrentiel ?",
+        "answer": "0"
       },
       "23": {
-        "question": "La mise en place de votre produit est-elle poussée par une démarche politique ?",
+        "question": "L'avez-vous étudié ?",
         "answer": "1"
       },
       "24": {
-        "question": "Les décisions sont-elles centralisées sur une seule personne ?",
-        "answer": "1"
+        "question": "Est-ce que vous avez une bonne compréhension des stratégies concurrentielles et des tendances du marché ?",
+        "answer": "0"
       },
       "25": {
-        "question": "La problématique à laquelle vous tentez de répondre vient-elle des utilisateurs ?",
+        "question": "Avez-vous des questions spécifiques pour sonder le marché ?",
         "answer": "1"
       },
       "26": {
-        "question": "Le problème à résoudre est-il une perception du siège ?",
+        "question": "Préférez-vous une approche plus large et générale pour sonder le marché ?",
         "answer": "1"
       },
       "27": {
-        "question": "Le produit-il a un objectif ?",
+        "question": "Est-ce que votre zone géographique est suffisamment large pour atteindre vos objectifs ?",
         "answer": "1"
       },
       "28": {
-        "question": "Les utilisateurs accueillent-ils bien les nouveautés ?",
-        "answer": "1"
+        "question": "Avez-vous envisagé de cibler des zones géographiques pour votre activité?",
+        "answer": "0"
       },
       "29": {
-        "question": "Les retours utilisateurs sont-ils pris en compte ?",
+        "question": "Faites-vous un veille juridique sur le sujet abordé ?",
         "answer": "1"
       },
       "30": {
-        "question": "Une campagne de communication (kick-off) a-t-elle eu lieu sur le produit ?",
+        "question": "Prenez-vous en compte cette veille dans la stratégie de votre produit ?",
         "answer": "1"
       },
       "31": {
-        "question": "La vision est-elle connue de tous ?",
+        "question": "Est-ce que le produit est intégré dans le système existant ?",
         "answer": "1"
       },
       "32": {
-        "question": "Avez-vous fait une étude concurrentielle avant de lancer le produit ?",
+        "question": "Est-ce que l'intégration du produit dans le système est compliqué ?",
         "answer": "1"
       },
       "33": {
-        "question": "Existe-il une solution qui a un périmètre similaire ?",
+        "question": "L'intégration dans le système du produit ralentit-il le rythme de ce dernier ?",
         "answer": "1"
       },
       "34": {
-        "question": "Les utilisateurs connaissent-ils l'existence du produit ?",
+        "question": "Avez-vous un suivi des performances du produit ?",
         "answer": "1"
       },
       "35": {
-        "question": "Le Product Owner (le responsable du produit) a-t-il toujours le dernier mot ?",
+        "question": "Avez-vous un plan d'action qui découle des perfomances du produit ?",
         "answer": "1"
       },
       "36": {
-        "question": "Le produit est-il intégré dans un projet qui a/va toucher plusieurs équipes/services ?",
+        "question": "Prenez-vous en compte les retours des utilisateurs en les intégrant dans le développement du produit ?",
         "answer": "1"
       },
       "37": {
-        "question": "Un cahier des charges a-t-il été construit ?",
+        "question": "Avez-vous assez de ressources pour construire votre produit ?",
         "answer": "1"
       },
       "38": {
-        "question": "Un lien quantifiable entre les objectifs et le résultat du produit existe-t-il ?",
+        "question": "Avez-vous assez de ressources pour gérer la maintenance du produit ?",
         "answer": "1"
       },
       "39": {
-        "question": "Il y a-t-il une remise en cause sur la valeur des fonctionnalités ?",
+        "question": "Est-ce que votre équipe est surchargée ?",
         "answer": "1"
       },
       "40": {
-        "question": "La mise en place du produit a-t-elle généré de nouveaux problèmes pour les utilisateurs ?",
+        "question": "Est-ce que votre équipe a des creux de charges ?",
         "answer": "1"
       },
       "41": {
-        "question": "Les utilisateurs ont-ils toujours le même irritant ?",
+        "question": "Prenez-vous du temps pour évaluer les objections de vos utilisateurs / clients ?",
         "answer": "1"
       },
       "42": {
-        "question": "La culture d'entreprise permet-elle de faire remonter des informations à connotation négative ?",
+        "question": "Prenez-vous du temps pour répondre en apportant une réponse concrète à ce dernier ?",
         "answer": "1"
       },
       "43": {
-        "question": "Le produit correspond-il aux attentes des utilisateurs ?",
+        "question": "Avez-vous un modèle économique ?",
         "answer": "1"
       },
       "44": {
-        "question": "Le produit est-il une refonte ?",
+        "question": "Avez-vous fait une étude concernant les prix de votre marché ?",
         "answer": "1"
       },
       "45": {
-        "question": "Les membres de votre équipe connaissent-ils parfaitement la raison d'être du produit ?",
+        "question": "Avez-vous fait une étude concernant les prix dans votre positionnement ?",
         "answer": "1"
       },
       "46": {
-        "question": "Y-a-t'il eu une cérémonie au lancement du produit ?",
+        "question": "Vos prix sont-ils en lien avec votre marché et votre positionnement ?",
         "answer": "1"
       },
       "47": {
-        "question": "L'équipe croit-elle dans son produit/service ?",
+        "question": "Avez-vous des activités marketing ?",
         "answer": "1"
       },
       "48": {
-        "question": "L'équipe a-t-elle le soutien de la direction ?",
+        "question": "Avez-vous des activités de vente ?",
         "answer": "1"
       },
       "49": {
-        "question": "La construction d'une des fonctionnalités de votre produit a-t-elle dépassé les 6 mois ?",
+        "question": "Ces activités sont-elles dissociées ?",
         "answer": "1"
       },
       "50": {
-        "question": "La construction de vos fonctionnalités nécessitent-elles plus de 7 personnes parmi l'équipe de réalisation ?",
+        "question": "Travaillent-t-elles ensemble ?",
         "answer": "1"
       },
       "51": {
-        "question": "Le leader sait-il motiver ses équipes ?",
+        "question": "Ont-elles des objectifs individuelles et collectives ?",
         "answer": "1"
       },
       "52": {
-        "question": "Les équipes ont-elles confiance dans leurs responsables ?",
+        "question": "Est-ce que vous priorisez vos fonctionnalités ?",
         "answer": "1"
       },
       "53": {
-        "question": "Le produit a-t-il de l'avenir ?",
+        "question": "Les utilisateurs sont-ils au courant de ces priorisations ?",
         "answer": "1"
       },
       "54": {
-        "question": "Le produit fait-il le café, le pain au chocolat et les sandwichs ?",
+        "question": "Sont-ils d'accord avec ceux là ?",
         "answer": "1"
       },
       "55": {
-        "question": "Le produit risque-t-il d'être décommissionné ?",
+        "question": "Limitez-vous à la création de nouvelles fonctionnalités ?",
         "answer": "1"
       },
       "56": {
-        "question": "Le produit est-il issu d'une expérimentation qui a duré plus d'1 an ?",
+        "question": "Limitez-vous à l'amélioration de nouvelles fonctionnalités ?",
         "answer": "1"
       },
       "57": {
-        "question": "Le produit/service va-t-il résoudre le principal irritant des utilisateurs ?",
+        "question": "Avez-vous identifié les principales fonctionnalités à mettre en oeuvre en priorité ?",
         "answer": "1"
       },
       "58": {
-        "question": "Une de vos fonctionnalités a-t-elle été créée pour compenser le déficit d'un autre produit ?",
-        "answer": "1"
+        "question": "Mettez-vous plus en avant les bienfaits technologiques du produit plutôt que sa valeur ?",
+        "answer": "0"
       },
       "59": {
-        "question": "Votre produit doit-il remplacer un produit obsolète sans nouvelle fonctionnalité ?",
+        "question": "Faîtes-vous passer en priorité la technique plutôt que les fonctionnalités ?",
+        "answer": "0"
+      },
+      "60": {
+        "question": "Avez-vous des indicateurs de performances pour suivre votre produit / service ?",
+        "answer": "0"
+      },
+      "61": {
+        "question": "Comparez-vous votre produit / services à vos concurrents ?",
+        "answer": "0"
+      },
+      "62": {
+        "question": "Est-ce que votre produit répond aux attentes des utilisateurs/clients ?",
+        "answer": "0"
+      },
+      "63": {
+        "question": "Est-ce que votre produit génère de la frustration ?",
         "answer": "1"
       },
-      "id": "0193"
+      "64": {
+        "question": "Votre produit est-il performant ?",
+        "answer": "1"
+      },
+      "65": {
+        "question": "Êtes-vous satisfait de la qualité de votre produit ?",
+        "answer": "1"
+      },
+      "66": {
+        "question": "Êtes-vous clair dans la présentation de votre produit ?",
+        "answer": "1"
+      },
+      "67": {
+        "question": "Lors de la présentation de votre produit, présentez-vous l'ensemble des fonctionnalités du produit ?",
+        "answer": "0"
+      },
+      "68": {
+        "question": "Communiquez-vous régulièrement sur votre produit ?",
+        "answer": "1"
+      },
+      "69": {
+        "question": "Est-ce que votre objectif principal est toujours de maximiser votre communication et votre image de marque, même si cela peut nuire à la qualité ou à la rentabilité de votre produit ?",
+        "answer": "1"
+      },
+      "70": {
+        "question": "Est-ce que le marché vous connait ?",
+        "answer": "1"
+      },
+      "71": {
+        "question": "Est-ce que votre entreprise est bien référencée sur les moteurs de recherche ?",
+        "answer": "1"
+      },
+      "72": {
+        "question": "Est-ce que votre entreprise est bien référencée sur les réseaux sociaux?",
+        "answer": "0"
+      },
+      "73": {
+        "question": "Est-ce que les équipes de développement, de marketing et de ventes échangent entre elles sur le produit ?",
+        "answer": "1"
+      },
+      "74": {
+        "question": "La stratégie est-elle claire ?",
+        "answer": "0"
+      },
+      "75": {
+        "question": "La stratégie est-elle liée aux objectifs de l'entreprise ?",
+        "answer": "1"
+      },
+      "id": "ad84"
     },
     {
       "0": {
-        "question": "Une enquête a-t-elle été effectuée auprès des utilisateurs ?",
-        "answer": "0"
+        "question": "Est-ce que vous collectez des feedbacks après le lancement du produit?",
+        "answer": null
       },
       "1": {
-        "question": "La version simplifiée et fonctionnelle du produit reflète-t-elle une hypothèse ?",
-        "answer": "1"
+        "question": "Avez-vous collecté des feedbacks avant le lancement du produit ?",
+        "answer": null
       },
       "2": {
-        "question": "Les utilisateurs donnent-ils leurs avis sur le produit et ses fonctionnalités ?",
-        "answer": "0"
+        "question": "Est-ce que la date de lancement est réaliste ?",
+        "answer": null
       },
       "3": {
-        "question": "La vision est-elle comprise de tous ?",
-        "answer": "1"
+        "question": "La date de lancement a-t-elle été vérifiée auprès des équipes de production ?",
+        "answer": null
       },
       "4": {
-        "question": "La vision peut-elle être répétée en une seule phrase ?",
-        "answer": "0"
+        "question": "Est-ce que la date de lancement est prévu avant la fin des tests du produit ?",
+        "answer": null
       },
       "5": {
-        "question": "L'objectif du produit peut-il être réalisable dans une période d'un an ?",
-        "answer": "1"
+        "question": "Avez-vous prévu un plan d'action pour le jour du lancement du produit ?",
+        "answer": null
       },
       "6": {
-        "question": "L'objectif du produit est-il compris de tous ?",
-        "answer": "0"
+        "question": "Est-ce que vous attendez des résultats de votre produit à court terme ?",
+        "answer": null
       },
       "7": {
-        "question": "Est-ce que quelqu'un décide de tout dans l'équipe ?",
-        "answer": "1"
+        "question": "Est-ce que vous attendez des résultats de votre produit à plus long terme ?",
+        "answer": null
       },
       "8": {
-        "question": "Les utilisateurs sont-ils informés des nouvelles fonctionnalités du produit ?",
-        "answer": "0"
+        "question": "Pensez-vous créer un nouveau besoin ?",
+        "answer": null
       },
       "9": {
-        "question": "Le produit est-il sous contrainte légale ?",
-        "answer": "0"
+        "question": "Avez-vous un échantillon représentatif de vos utilisateurs ?",
+        "answer": null
       },
       "10": {
-        "question": "Le produit corrige-t-il d'autres problèmes ?",
-        "answer": "1"
+        "question": "Cet échantillon est-il représentatif de l'ensemble des utilisateurs ?",
+        "answer": null
       },
       "11": {
-        "question": "Y-a-t'il une majorité de managers parmi les utilisateurs ?",
-        "answer": "0"
+        "question": "Cet échantillon contient-il l'ensemble des catégories de vos utilisateurs ?",
+        "answer": null
       },
       "12": {
-        "question": "Faites-vous varier votre panel d'utilisateurs interrogés chaque trimestre ?",
-        "answer": "1"
+        "question": "Avez-vous recours à d'autres sources d'informations qu'Internet pour mener votre recherche ?",
+        "answer": null
       },
       "13": {
-        "question": "Votre cible d'utilisateurs fait-elle partie du management ?",
-        "answer": "0"
+        "question": "Êtes-vous à l'écoute des tendances du marché ?",
+        "answer": null
       },
       "14": {
-        "question": "La mise en place de votre produit est-elle en adéquation avec les retours des utilisateurs ?",
-        "answer": "1"
+        "question": "Prenez-vous en compte ces tendances dans votre stratégie produit ?",
+        "answer": null
       },
       "15": {
-        "question": "Le siège impose-t-il un processus métier ?",
-        "answer": "1"
+        "question": "Avez-vous une cible de marché ?",
+        "answer": null
       },
       "16": {
-        "question": "La vision produit est-elle mise à jour régulièrement ? (environ tous les trimestres)",
-        "answer": "0"
+        "question": "Est-ce qu'elle est définit ?",
+        "answer": null
       },
       "17": {
-        "question": "Les utilisateurs acceptent-ils le changement continu ?",
-        "answer": "1"
+        "question": "Avez-vous des indicateurs sur le suivi de votre cible ?",
+        "answer": null
       },
       "18": {
-        "question": "Les nouvelles fonctionnalités du produit sont-elles proposées au moins une fois par mois ?",
-        "answer": "0"
+        "question": "Connaissez-vous votre marché ?",
+        "answer": null
       },
       "19": {
-        "question": "Le produit est-il mis à jour toutes les semaines ?",
-        "answer": "1"
+        "question": "Connaissez-vous les tendances du moment sur votre marché ?",
+        "answer": null
       },
       "20": {
-        "question": "Y'a-t-il plusieurs validations hiérarchiques pour faire évoluer le produit ?",
-        "answer": "0"
+        "question": "Votre produit est-il adapté aux tendances de votre marché ?",
+        "answer": null
       },
       "21": {
-        "question": "Êtes-vous un manager ?",
-        "answer": "1"
+        "question": "Votre produit se démarque-t-il clairement des autres produits concurrents?",
+        "answer": null
       },
       "22": {
-        "question": "Est-ce que votre produit a été *décidé* par une personne qui est en posture de *décideur* ?",
-        "answer": "0"
+        "question": "Connaissez-vous le marché concurrentiel ?",
+        "answer": null
       },
       "23": {
-        "question": "La mise en place de votre produit est-elle poussée par une démarche politique ?",
-        "answer": "1"
+        "question": "L'avez-vous étudié ?",
+        "answer": null
       },
       "24": {
-        "question": "Les décisions sont-elles centralisées sur une seule personne ?",
-        "answer": "0"
+        "question": "Est-ce que vous avez une bonne compréhension des stratégies concurrentielles et des tendances du marché ?",
+        "answer": null
       },
       "25": {
-        "question": "La problématique à laquelle vous tentez de répondre vient-elle des utilisateurs ?",
-        "answer": "1"
+        "question": "Avez-vous des questions spécifiques pour sonder le marché ?",
+        "answer": null
       },
       "26": {
-        "question": "Le problème à résoudre est-il une perception du siège ?",
-        "answer": "1"
+        "question": "Préférez-vous une approche plus large et générale pour sonder le marché ?",
+        "answer": null
       },
       "27": {
-        "question": "Le produit-il a un objectif ?",
-        "answer": "0"
+        "question": "Est-ce que votre zone géographique est suffisamment large pour atteindre vos objectifs ?",
+        "answer": null
       },
       "28": {
-        "question": "Les utilisateurs accueillent-ils bien les nouveautés ?",
-        "answer": "1"
+        "question": "Avez-vous envisagé de cibler des zones géographiques pour votre activité?",
+        "answer": null
       },
       "29": {
-        "question": "Les retours utilisateurs sont-ils pris en compte ?",
-        "answer": "0"
+        "question": "Faites-vous un veille juridique sur le sujet abordé ?",
+        "answer": null
       },
       "30": {
-        "question": "Une campagne de communication (kick-off) a-t-elle eu lieu sur le produit ?",
-        "answer": "1"
+        "question": "Prenez-vous en compte cette veille dans la stratégie de votre produit ?",
+        "answer": null
       },
       "31": {
-        "question": "La vision est-elle connue de tous ?",
-        "answer": "1"
+        "question": "Est-ce que le produit est intégré dans le système existant ?",
+        "answer": null
       },
       "32": {
-        "question": "Avez-vous fait une étude concurrentielle avant de lancer le produit ?",
-        "answer": "0"
+        "question": "Est-ce que l'intégration du produit dans le système est compliqué ?",
+        "answer": null
       },
       "33": {
-        "question": "Existe-il une solution qui a un périmètre similaire ?",
-        "answer": "1"
+        "question": "L'intégration dans le système du produit ralentit-il le rythme de ce dernier ?",
+        "answer": null
       },
       "34": {
-        "question": "Les utilisateurs connaissent-ils l'existence du produit ?",
-        "answer": "1"
+        "question": "Avez-vous un suivi des performances du produit ?",
+        "answer": null
       },
       "35": {
-        "question": "Le Product Owner (le responsable du produit) a-t-il toujours le dernier mot ?",
-        "answer": "1"
+        "question": "Avez-vous un plan d'action qui découle des perfomances du produit ?",
+        "answer": null
       },
       "36": {
-        "question": "Le produit est-il intégré dans un projet qui a/va toucher plusieurs équipes/services ?",
-        "answer": "0"
+        "question": "Prenez-vous en compte les retours des utilisateurs en les intégrant dans le développement du produit ?",
+        "answer": null
       },
       "37": {
-        "question": "Un cahier des charges a-t-il été construit ?",
-        "answer": "1"
+        "question": "Avez-vous assez de ressources pour construire votre produit ?",
+        "answer": null
       },
       "38": {
-        "question": "Un lien quantifiable entre les objectifs et le résultat du produit existe-t-il ?",
-        "answer": "1"
+        "question": "Avez-vous assez de ressources pour gérer la maintenance du produit ?",
+        "answer": null
       },
       "39": {
-        "question": "Il y a-t-il une remise en cause sur la valeur des fonctionnalités ?",
-        "answer": "1"
+        "question": "Est-ce que votre équipe est surchargée ?",
+        "answer": null
       },
       "40": {
-        "question": "La mise en place du produit a-t-elle généré de nouveaux problèmes pour les utilisateurs ?",
-        "answer": "1"
+        "question": "Est-ce que votre équipe a des creux de charges ?",
+        "answer": null
       },
       "41": {
-        "question": "Les utilisateurs ont-ils toujours le même irritant ?",
-        "answer": "1"
+        "question": "Prenez-vous du temps pour évaluer les objections de vos utilisateurs / clients ?",
+        "answer": null
       },
       "42": {
-        "question": "La culture d'entreprise permet-elle de faire remonter des informations à connotation négative ?",
-        "answer": "1"
+        "question": "Prenez-vous du temps pour répondre en apportant une réponse concrète à ce dernier ?",
+        "answer": null
       },
       "43": {
-        "question": "Le produit correspond-il aux attentes des utilisateurs ?",
-        "answer": "1"
+        "question": "Avez-vous un modèle économique ?",
+        "answer": null
       },
       "44": {
-        "question": "Le produit est-il une refonte ?",
-        "answer": "0"
+        "question": "Avez-vous fait une étude concernant les prix de votre marché ?",
+        "answer": null
       },
       "45": {
-        "question": "Les membres de votre équipe connaissent-ils parfaitement la raison d'être du produit ?",
-        "answer": "1"
+        "question": "Avez-vous fait une étude concernant les prix dans votre positionnement ?",
+        "answer": null
       },
       "46": {
-        "question": "Y-a-t'il eu une cérémonie au lancement du produit ?",
-        "answer": "1"
+        "question": "Vos prix sont-ils en lien avec votre marché et votre positionnement ?",
+        "answer": null
       },
       "47": {
-        "question": "L'équipe croit-elle dans son produit/service ?",
-        "answer": "1"
+        "question": "Avez-vous des activités marketing ?",
+        "answer": null
       },
       "48": {
-        "question": "L'équipe a-t-elle le soutien de la direction ?",
-        "answer": "1"
+        "question": "Avez-vous des activités de vente ?",
+        "answer": null
       },
       "49": {
-        "question": "La construction d'une des fonctionnalités de votre produit a-t-elle dépassé les 6 mois ?",
-        "answer": "0"
+        "question": "Ces activités sont-elles dissociées ?",
+        "answer": null
       },
       "50": {
-        "question": "La construction de vos fonctionnalités nécessitent-elles plus de 7 personnes parmi l'équipe de réalisation ?",
-        "answer": "1"
+        "question": "Travaillent-t-elles ensemble ?",
+        "answer": null
       },
       "51": {
-        "question": "Le leader sait-il motiver ses équipes ?",
-        "answer": "1"
+        "question": "Ont-elles des objectifs individuelles et collectives ?",
+        "answer": null
       },
       "52": {
-        "question": "Les équipes ont-elles confiance dans leurs responsables ?",
-        "answer": "1"
+        "question": "Est-ce que vous priorisez vos fonctionnalités ?",
+        "answer": null
       },
       "53": {
-        "question": "Le produit a-t-il de l'avenir ?",
-        "answer": "1"
+        "question": "Les utilisateurs sont-ils au courant de ces priorisations ?",
+        "answer": null
       },
       "54": {
-        "question": "Le produit fait-il le café, le pain au chocolat et les sandwichs ?",
-        "answer": "1"
+        "question": "Sont-ils d'accord avec ceux là ?",
+        "answer": null
       },
       "55": {
-        "question": "Le produit risque-t-il d'être décommissionné ?",
-        "answer": "0"
+        "question": "Limitez-vous à la création de nouvelles fonctionnalités ?",
+        "answer": null
       },
       "56": {
-        "question": "Le produit est-il issu d'une expérimentation qui a duré plus d'1 an ?",
-        "answer": "1"
+        "question": "Limitez-vous à l'amélioration de nouvelles fonctionnalités ?",
+        "answer": null
       },
       "57": {
-        "question": "Le produit/service va-t-il résoudre le principal irritant des utilisateurs ?",
-        "answer": "1"
+        "question": "Avez-vous identifié les principales fonctionnalités à mettre en oeuvre en priorité ?",
+        "answer": null
       },
       "58": {
-        "question": "Une de vos fonctionnalités a-t-elle été créée pour compenser le déficit d'un autre produit ?",
-        "answer": "1"
+        "question": "Mettez-vous plus en avant les bienfaits technologiques du produit plutôt que sa valeur ?",
+        "answer": null
       },
       "59": {
-        "question": "Votre produit doit-il remplacer un produit obsolète sans nouvelle fonctionnalité ?",
+        "question": "Faîtes-vous passer en priorité la technique plutôt que les fonctionnalités ?",
+        "answer": null
+      },
+      "60": {
+        "question": "Avez-vous des indicateurs de performances pour suivre votre produit / service ?",
+        "answer": null
+      },
+      "61": {
+        "question": "Comparez-vous votre produit / services à vos concurrents ?",
+        "answer": null
+      },
+      "62": {
+        "question": "Est-ce que votre produit répond aux attentes des utilisateurs/clients ?",
+        "answer": null
+      },
+      "63": {
+        "question": "Est-ce que votre produit génère de la frustration ?",
+        "answer": null
+      },
+      "64": {
+        "question": "Votre produit est-il performant ?",
+        "answer": null
+      },
+      "65": {
+        "question": "Êtes-vous satisfait de la qualité de votre produit ?",
+        "answer": null
+      },
+      "66": {
+        "question": "Êtes-vous clair dans la présentation de votre produit ?",
+        "answer": null
+      },
+      "67": {
+        "question": "Lors de la présentation de votre produit, présentez-vous l'ensemble des fonctionnalités du produit ?",
+        "answer": null
+      },
+      "68": {
+        "question": "Communiquez-vous régulièrement sur votre produit ?",
+        "answer": null
+      },
+      "69": {
+        "question": "Est-ce que votre objectif principal est toujours de maximiser votre communication et votre image de marque, même si cela peut nuire à la qualité ou à la rentabilité de votre produit ?",
+        "answer": null
+      },
+      "70": {
+        "question": "Est-ce que le marché vous connait ?",
+        "answer": null
+      },
+      "71": {
+        "question": "Est-ce que votre entreprise est bien référencée sur les moteurs de recherche ?",
+        "answer": null
+      },
+      "72": {
+        "question": "Est-ce que votre entreprise est bien référencée sur les réseaux sociaux?",
+        "answer": null
+      },
+      "73": {
+        "question": "Est-ce que les équipes de développement, de marketing et de ventes échangent entre elles sur le produit ?",
+        "answer": "0"
+      },
+      "74": {
+        "question": "La stratégie est-elle claire ?",
         "answer": "1"
       },
-      "id": "8085"
+      "75": {
+        "question": "La stratégie est-elle liée aux objectifs de l'entreprise ?",
+        "answer": "1"
+      },
+      "id": "9b61"
+    }
+  ],
+  "userInfo": [
+    {
+      "id": "5604",
+      "prenom": "jean",
+      "nom": "dupont"
+    },
+    {
+      "id": "e52a",
+      "prenom": "Deniz",
+      "nom": "Pekin",
+      "secteur": "cirque",
+      "email": "deniz.pekin@protonmail.com"
+    },
+    {
+      "id": "75ec",
+      "prenom": "Deniz",
+      "nom": "Pekin",
+      "secteur": "daydreaming",
+      "email": "deniz.pekin@protonmail.com"
     }
   ]
 }

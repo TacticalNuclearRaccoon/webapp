@@ -2,6 +2,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import DiagCard from '/Users/deni-kun/Documents/v2/plastik/src/components/DiagCard.vue';
 import SurveyView from '/Users/deni-kun/Documents/v2/plastik/src/components/SurveyView.vue';
+import FormsView from '/Users/deni-kun/Documents/v2/plastik/src/components/FormsView.vue';
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: '/survey',
     name: 'Survey',
     component: SurveyView
+  },
+  {
+    path:'/form',
+    name: 'Forms',
+    component: FormsView
   }
 ];
 
