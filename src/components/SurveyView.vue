@@ -1,4 +1,3 @@
-
 <template>
   <div class="survey-container">
     <h1>{{ ediag }}</h1>
@@ -20,6 +19,10 @@
       </div>
       <div v-else>
         <h2>{{ currentPlanetName }}</h2>
+        <div class="progress-container">
+          <ProgressBar :bgcolor="'#6a1b9a'" :completed="currentPlanetProgress" />
+          <span>{{ currentPlanetProgress }}% complété</span>
+        </div>
         <div class="main-text" v-if="getCurrentQuestion">
           <span>{{ getCurrentQuestion.question }}</span>
         </div>
@@ -35,6 +38,7 @@
     <section v-else-if="diagCompleted">
       <h2>e-Diagnostic terminé</h2>
       <p>Merci beaucoup</p>
+      <button class="next-btn" @click="router.push({ name: 'Forms' })">Suivant</button>
     </section>
   </div>
 </template>
@@ -42,16 +46,18 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue';
 import { store } from '@/store';
+import { useRouter } from 'vue-router';
 import { useRoute } from 'vue-router';
 import axios from 'axios';
+import ProgressBar from '@/components/ProgressBar.vue';
 
-const diagName = computed(() => store.diagName);
+const router = useRouter();
 const route = useRoute();
+const diagName = computed(() => store.diagName);
 const questions = ref({});
 const diagCompleted = ref(false);
 const currentQuestion = ref(0);
 const loading = ref(true);
-
 const ediag = diagName.value;
 
 const fetchQuestions = async () => {
@@ -95,14 +101,9 @@ watch(route, (newRoute) => {
 });
 
 const planets = computed(() => Object.keys(questions.value));
-
 const currentPlanet = ref(planets.value[0]);
-
 const currentPlanetName = computed(() => currentPlanet.value);
-
-const currentPlanetQuestions = computed(() => {
-  return questions.value[currentPlanet.value] || [];
-});
+const currentPlanetQuestions = computed(() => questions.value[currentPlanet.value] || []);
 
 const getCurrentQuestion = computed(() => {
   if (!currentPlanetQuestions.value || currentPlanetQuestions.value.length === 0) return null;
@@ -111,9 +112,7 @@ const getCurrentQuestion = computed(() => {
   return question;
 });
 
-const stateZero = computed(() => {
-  return !getCurrentQuestion.value;
-});
+const stateZero = computed(() => !getCurrentQuestion.value);
 
 const setAnswer = (evt) => {
   questions.value[currentPlanet.value][currentQuestion.value].selected = evt.target.value;
@@ -124,6 +123,10 @@ const selectPlanet = (planet) => {
   currentQuestion.value = 0;
 };
 
+const isSurveyComplete = computed(() => {
+  return Object.values(questions.value).flat().every(q => q.selected !== null);
+});
+
 const nextQuestion = () => {
   if (currentQuestion.value < currentPlanetQuestions.value.length - 1) {
     currentQuestion.value++;
@@ -132,7 +135,7 @@ const nextQuestion = () => {
     if (currentIndex < planets.value.length - 1) {
       currentPlanet.value = planets.value[currentIndex + 1];
       currentQuestion.value = 0;
-    } else {
+    } else if (isSurveyComplete.value) {
       diagCompleted.value = true;
       saveAnswers();
     }
@@ -140,76 +143,91 @@ const nextQuestion = () => {
 };
 
 const getButtonText = () => {
-  if (!getCurrentQuestion.value || getCurrentQuestion.value.index === currentPlanetQuestions.value.length - 1) {
+  if (isSurveyComplete.value) {
     return 'Terminer';
   }
-  if (getCurrentQuestion.value.selected === null) {
+  if (!getCurrentQuestion.value || getCurrentQuestion.value.selected === null) {
     return 'Choisir une réponse';
   }
   return 'Question suivante';
 };
 
-const isButtonDisabled = () => {
-  return !getCurrentQuestion.value || getCurrentQuestion.value.selected === null;
+const isButtonDisabled = () => !getCurrentQuestion.value || getCurrentQuestion.value.selected === null;
+
+const currentPlanetProgress = computed(() => {
+  const totalQuestions = currentPlanetQuestions.value.length;
+  const answeredQuestions = currentPlanetQuestions.value.filter(q => q.selected !== null).length;
+  return Math.round((answeredQuestions / totalQuestions) * 100);
+});
+
+const navigateToForms = () => {
+  changeValue();
+  router.push({ name: 'Forms' });
 };
 </script>
-  
-  <style scoped>
-  .survey-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px;
-  }
-  .main-text {
-    background-color: white;
-    color: #250070;
-    border-radius: 5px;
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-    font-family: 'Azo Sans';
-  }
-  
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
 
-  .progress-bar {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 1rem;
-  }
-          
-  .btn-grad {
-    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-    font-weight: 700;
-    font-size: 1.25rem;
-  }
+<style scoped>
+h2 {
+  align-content: center;
+}
+p {
+  align-content: center;
+}
+.survey-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+}
+.main-text {
+  background-color: white;
+  color: #250070;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: 'Azo Sans';
+}
 
-  .btn-grad:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
-  }
-  .btn-grad:disabled{
-    opacity: 0.5;
-  }
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
 
-  /*radio item*/
-  .radio-item [type="radio"] {
+.progress-bar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1rem;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-grad:disabled {
+  opacity: 0.5;
+}
+
+/*radio item*/
+.radio-item [type="radio"] {
   display: none;
 }
 
@@ -270,27 +288,42 @@ const isButtonDisabled = () => {
 }
 
 /*Styles for planet tabs*/
-  .tabs {
-    display: flex;
-    margin-bottom: 20px;
-  }
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
 
-  .tabs button {
-    margin-right: 10px;
-    padding: 10px;
-    border: none;
-    background: #ddd;
-    cursor: pointer;
-  }
+.tabs button {
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
 
-  .tabs button.active-tab {
-    background: #333;
-    color: white;
-  }
+.tabs button.active-tab {
+  background: #333;
+  color: white;
+}
 
-  .survey-container .btn-grad {
-    margin-top: 20px;
-  }
+.survey-container .btn-grad {
+  margin-top: 20px;
+}
 
-  </style>
-    
+.next-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid #f78181;
+  align-self: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+</style>
