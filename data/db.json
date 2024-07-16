@@ -1,0 +1,2908 @@
+{
+  "Collaborer en Équipe": [
+    {
+      "id": "1",
+      "dysfunction": "L'équipe ne recherche pas le feedback",
+      "planet": "Amélioration continue",
+      "star": "Team",
+      "question": "L'équipe valide-t-elle avec les utilisateurs le bon fonctionnement du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "1",
+      "dysfunction": "L'équipe ne recherche pas le feedback",
+      "planet": "Amélioration continue",
+      "star": "Team",
+      "question": "Partage-t-elle les problèmes de fonctionnement qu'elle rencontre ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "1",
+      "dysfunction": "L'équipe ne recherche pas le feedback",
+      "planet": "Amélioration continue",
+      "star": "Team",
+      "question": "L'équipe se challenge-t-elle dans ses décisions ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "2",
+      "dysfunction": "L'équipe se remet rarement en cause",
+      "planet": "Amélioration continue",
+      "star": "Team",
+      "question": "Apprend-elle de ces erreurs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "2",
+      "dysfunction": "L'équipe se remet rarement en cause",
+      "planet": "Amélioration continue",
+      "star": "Team",
+      "question": "Prend-elle la responsabilité de certains problèmes rencontrés ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "4",
+      "dysfunction": "L'équipe n'a pas de feedback",
+      "planet": "Amélioration continue",
+      "star": "Team",
+      "question": "Les utilisateurs donnent-ils leur avis sur le produit/service ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "4",
+      "dysfunction": "L'équipe n'a pas de feedback",
+      "planet": "Amélioration continue",
+      "star": "Team",
+      "question": "Les services adjacents ou la direction font-ils des retours constructifs à l'équipe ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "4",
+      "dysfunction": "L'équipe n'a pas de feedback",
+      "planet": "Amélioration continue",
+      "star": "Team",
+      "question": "L'équipe a-t-elle des retours sur son produit/service ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "5",
+      "dysfunction": "En l'absence d'un membre, l'équipe est fortement ralentie",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "Peut-elle fonctionner en cas d'absence de l'un de ses membres ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "5",
+      "dysfunction": "En l'absence d'un membre, l'équipe est fortement ralentie",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "En cas d'absence d'un membre de l'équipe, arrive-t-il qu'un processus soit bloqué ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "5",
+      "dysfunction": "En l'absence d'un membre, l'équipe est fortement ralentie",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "En cas d'absence d'un membre de l'équipe, existe-t-il une personne qui a la même compétence ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "6",
+      "dysfunction": "Le produit / le service ne possède pas l'entièreté des compétences pour son bon fonctionnement",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "Est-ce que l'équipe possèdent les compétences nécessaires pour construire / améliorer le produit/service ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "6",
+      "dysfunction": "Le produit / le service ne possède pas l'entièreté des compétences pour son bon fonctionnement",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "Le produit/service est-il construit en se basant sur les compétences de chaque membre de l'équipe ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "6",
+      "dysfunction": "Le produit / le service ne possède pas l'entièreté des compétences pour son bon fonctionnement",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "L'équipe possède-t-elle des processus qui peuvent la bloquer dans son quotidien ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "7",
+      "dysfunction": "L'équipe dit oui à tout",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "L'équipe dit-elle oui à tout ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "7",
+      "dysfunction": "L'équipe dit oui à tout",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "Continue-t-elle à accepter des nouvelles tâches alors qu'elle semble être débordée ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "8",
+      "dysfunction": "L'équipe est trop grande",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "Est-ce que l'équipe comporte trop de membres ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "9",
+      "dysfunction": "L'équipe dit non à tout",
+      "planet": "Autonomie",
+      "star": "Team",
+      "question": "Refuse-t-elle systématiquement les demandes ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "11",
+      "dysfunction": "L'équipe n'anticipe pas assez",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Votre équipe est-elle régulièrement bloquée dans son quotidien?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "11",
+      "dysfunction": "L'équipe n'anticipe pas assez",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Travaille-t-elle avec un rythme trop soutenu ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "11",
+      "dysfunction": "L'équipe n'anticipe pas assez",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Fait-elle face à beaucoup d'imprévus ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "11",
+      "dysfunction": "L'équipe n'anticipe pas assez",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Arrive-t-elle à faire en sorte que les perturbations deviennent des \\\"non évènements\\\" ?\"",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "11",
+      "dysfunction": "L'équipe n'anticipe pas assez",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Avez-vous du mal à suivre le flux de travail ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "11",
+      "dysfunction": "L'équipe n'anticipe pas assez",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Votre équipe prévoit-elle une gestion des retards, des tâches mises sur le côté ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "11",
+      "dysfunction": "L'équipe n'anticipe pas assez",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Quand l'équipe prend une décision, prend-elle en compte le risque ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "11",
+      "dysfunction": "L'équipe n'anticipe pas assez",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Est-ce qu'elle prend en compte les absences de chacun dans sa charge de travail ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "11",
+      "dysfunction": "L'équipe n'anticipe pas assez",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Garde-t-elle une marge de manoeuvre pour gérer les imprévus ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "12",
+      "dysfunction": "Majorité de membres individualistes",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Avez-vous aidé un membre de votre équipe récemment ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "12",
+      "dysfunction": "Majorité de membres individualistes",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Lors de l'arrivée d'une nouvelle personne dans l'équipe, existe-t-il un processus d'intégration ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "12",
+      "dysfunction": "Majorité de membres individualistes",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Est-ce que vous vous considérez comme le meilleur ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "12",
+      "dysfunction": "Majorité de membres individualistes",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Est-ce que les membres de votre équipe ont les mêmes objectifs que vous ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "13",
+      "dysfunction": "L'équipe n'ose pas",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Avez-vous le sentiment d'être bloqué ou de ne pas pouvoir prendre des initiatives ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "13",
+      "dysfunction": "L'équipe n'ose pas",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Est-ce que l'équipe a les moyens de résoudre le ou les problèmes ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "13",
+      "dysfunction": "L'équipe n'ose pas",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Le fait-elle ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "13",
+      "dysfunction": "L'équipe n'ose pas",
+      "planet": "Collaboration",
+      "star": "Team",
+      "question": "Avez-vous la possibilité de dire non ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "14",
+      "dysfunction": "Une personne impose régulièrement des décisions",
+      "planet": "Équilibre",
+      "star": "Team",
+      "question": "Quelqu'un décide-t-il de tout pour l'équipe ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "15",
+      "dysfunction": "L'équipe est bridée par le management",
+      "planet": "Équilibre",
+      "star": "Team",
+      "question": "Faut-il une validation du manager pour prendre une décision ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "16",
+      "dysfunction": "Un des membres de l'équipe se met trop en avant sur son domaine de compétences",
+      "planet": "Équilibre",
+      "star": "Team",
+      "question": "Est-elle exigeante et passe-t-elle du temps à parfaire ce qu'elle fait ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "17",
+      "dysfunction": "L'équipe a trop de leaders",
+      "planet": "Équilibre",
+      "star": "Team",
+      "question": "Lorsqu'elle prend des décisions, qu'elle priorise ou lorsqu'elle effectue ses tâches arrive-t-il que l'équipe s'éparpille ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "17",
+      "dysfunction": "L'équipe a trop de leaders",
+      "planet": "Équilibre",
+      "star": "Team",
+      "question": "Met-elle du temps à prendre une décision ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "18",
+      "dysfunction": "L'équipe n'a pas de leader",
+      "planet": "Équilibre",
+      "star": "Team",
+      "question": "Attend-elle une personne interne ou externe à l'équipe pour avancer ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "19",
+      "dysfunction": "L'équipe n'a pas d'objectifs priorisés",
+      "planet": "Objectifs",
+      "star": "Team",
+      "question": "L'équipe possède-t-elle des objectifs clairs et priorisés ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "20",
+      "dysfunction": "Problème d'objectif commun",
+      "planet": "Objectifs",
+      "star": "Team",
+      "question": "Les membres de l'équipe partagent-ils le même objectif ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "21",
+      "dysfunction": "L'équipe ne se sent pas responsable",
+      "planet": "Objectifs",
+      "star": "Team",
+      "question": "L'équipe se sent-elle responsable pour atteindre ses objectifs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "21",
+      "dysfunction": "L'équipe ne se sent pas responsable",
+      "planet": "Objectifs",
+      "star": "Team",
+      "question": "Est-elle animée par son objectif ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "22",
+      "dysfunction": "L'équipe est déresponsabilisée",
+      "planet": "Objectifs",
+      "star": "Team",
+      "question": "Est-elle autonome sur ces sujets ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "22",
+      "dysfunction": "L'équipe est déresponsabilisée",
+      "planet": "Objectifs",
+      "star": "Team",
+      "question": "Dispose-t-elle des moyens concrets pour atteindre ses objectifs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "23",
+      "dysfunction": "L'équipe est abandonnée",
+      "planet": "Objectifs",
+      "star": "Team",
+      "question": "Est-elle challengée ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "24",
+      "dysfunction": "L'équipe ne s'approprie pas assez le sens métier",
+      "planet": "Raison d'être",
+      "star": "Team",
+      "question": "L'équipe comprend-elle le sens du produit / service ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "24",
+      "dysfunction": "L'équipe ne s'approprie pas assez le sens métier",
+      "planet": "Raison d'être",
+      "star": "Team",
+      "question": "Challenge-t-elle le fonctionnement du service ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "25",
+      "dysfunction": "La valeur du produit / service reste abstraite pour l'équipe",
+      "planet": "Raison d'être",
+      "star": "Team",
+      "question": "Priorise-t-elle ces tâches en fonction de celles qui ont le plus de valeur pour l'utilisateur ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "25",
+      "dysfunction": "La valeur du produit / service reste abstraite pour l'équipe",
+      "planet": "Raison d'être",
+      "star": "Team",
+      "question": "L'aspect technique est-il plus mis en avant que les demandes ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "26",
+      "dysfunction": "Le turnover est important",
+      "planet": "Stabilité",
+      "star": "Team",
+      "question": "Le taux de départ du personnel de l'équipe est-il important ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "26",
+      "dysfunction": "Le turnover est important",
+      "planet": "Stabilité",
+      "star": "Team",
+      "question": "L'équipe a-t-elle connue des variations de taille ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "27",
+      "dysfunction": "L'équipe prend trop de risques",
+      "planet": "Stabilité",
+      "star": "Team",
+      "question": "L'équipe se précipite-t-elle pour améliorer/corriger le produit/service sans vérifier les impacts ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "28",
+      "dysfunction": "L'équipe gère trop de produits / services",
+      "planet": "Stabilité",
+      "star": "Team",
+      "question": "La charge de travail des produits dépasse-t-elle la capacité de l'équipe ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "29",
+      "dysfunction": "Les membres d'une équipe ne communiquent pas suffisamment",
+      "planet": "Transparence",
+      "star": "Team",
+      "question": "Les membres de l'équipe ont-ils tous le même niveau d'information ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "29",
+      "dysfunction": "Les membres d'une équipe ne communiquent pas suffisamment",
+      "planet": "Transparence",
+      "star": "Team",
+      "question": "Sont-ils capables de pousser les bonnes informations aux bonnes personnes ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "30",
+      "dysfunction": "L'ambiance n'est pas au beau fixe",
+      "planet": "Transparence",
+      "star": "Team",
+      "question": "Considérez-vous que les membres de votre équipe sont honnêtes ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "31",
+      "dysfunction": "Des membres de l'équipe font de la rétention d'information",
+      "planet": "Transparence",
+      "star": "Team",
+      "question": "Retiennent-ils volontairement des informations ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "32",
+      "dysfunction": "Le comportement d'un individu dérange l'équipe",
+      "planet": "Transparence",
+      "star": "Team",
+      "question": "Pensez-vous qu'un membre de l'équipe agace les autres membres de manière générale ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "32",
+      "dysfunction": "Le comportement d'un individu dérange l'équipe",
+      "planet": "Transparence",
+      "star": "Team",
+      "question": "Etes-vous dérangés par l'attitude d'un membre de l'équipe ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "33",
+      "dysfunction": "Les individus sont résignés",
+      "planet": "Transparence",
+      "star": "Team",
+      "question": "Avez-vous déjà ressenti une fatigue extrême dans le contexte de l'équipe ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "33",
+      "dysfunction": "Les individus sont résignés",
+      "planet": "Transparence",
+      "star": "Team",
+      "question": "Votre équipe est-elle motivée par ce qu'elle construit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "34",
+      "dysfunction": "Les membres de l'équipe ont des non-dits",
+      "planet": "Transparence",
+      "star": "Team",
+      "question": "Les membres de l'équipe se font-ils confiance ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    }
+  ],
+  "Mesurer la vision produit": [
+    {
+      "id": "35",
+      "dysfunction": "Pas d'enquête au préalable auprès de l'utilisateur",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "Une enquête a-t-elle été effectuée auprès des utilisateurs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "36",
+      "dysfunction": "Trop de temps passé sur la 1ere version",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "La version simplifiée et fonctionnelle du produit reflète-t-elle une hypothèse ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "37",
+      "dysfunction": "L'utilisateur n'a pas moyen de remonter ces problèmes",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "Les utilisateurs donnent-ils leurs avis sur le produit et ses fonctionnalités ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "38",
+      "dysfunction": "La vision n'est pas claire",
+      "planet": "Vision partagée",
+      "star": "Product vision",
+      "question": "La vision est-elle comprise de tous ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "38",
+      "dysfunction": "La vision n'est pas claire",
+      "planet": "Vision partagée",
+      "star": "Product vision",
+      "question": "La vision peut-elle être répétée en une seule phrase ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "39",
+      "dysfunction": "Objectif non SMART",
+      "planet": "Projection d'un objectif",
+      "star": "Product vision",
+      "question": "L'objectif du produit peut-il être réalisable dans une période d'un an ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "39",
+      "dysfunction": "Objectif non SMART",
+      "planet": "Projection d'un objectif",
+      "star": "Product vision",
+      "question": "L'objectif du produit est-il compris de tous ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "40",
+      "dysfunction": "Manque de collaboration",
+      "planet": "Source d'inspiration",
+      "star": "Product vision",
+      "question": "Est-ce que quelqu'un décide de tout dans l'équipe ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "41",
+      "dysfunction": "La vision ne change pas",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Les utilisateurs sont-ils informés des nouvelles fonctionnalités du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "41",
+      "dysfunction": "La vision ne change pas",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Le produit est-il sous contrainte légale ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "42",
+      "dysfunction": "Mauvais focus du problème",
+      "planet": "Générer de la valeur en fonction du problème",
+      "star": "Product vision",
+      "question": "Le produit corrige-t-il d'autres problèmes ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "43",
+      "dysfunction": "Les utilisateurs choisis ne sont pas un échantillon représentatif",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "Y-a-t'il une majorité de managers parmi les utilisateurs ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "43",
+      "dysfunction": "Les utilisateurs choisis ne sont pas un échantillon représentatif",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "Faites-vous varier votre panel d'utilisateurs interrogés chaque trimestre ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "43",
+      "dysfunction": "Les utilisateurs choisis ne sont pas un échantillon représentatif",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "Votre cible d'utilisateurs fait-elle partie du management ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "44",
+      "dysfunction": "Le processus n'est pas écrit en collaboration avec les utilisateurs",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "La mise en place de votre produit est-elle en adéquation avec les retours des utilisateurs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "44",
+      "dysfunction": "Le processus n'est pas écrit en collaboration avec les utilisateurs",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "Le siège impose-t-il un processus métier ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "45",
+      "dysfunction": "La vision n'est pas mise à jour",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "La vision produit est-elle mise à jour régulièrement ? (environ tous les trimestres)",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "45",
+      "dysfunction": "La vision n'est pas mise à jour",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Les utilisateurs acceptent-ils le changement continu ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "45",
+      "dysfunction": "La vision n'est pas mise à jour",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Les nouvelles fonctionnalités du produit sont-elles proposées au moins une fois par mois ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "45",
+      "dysfunction": "La vision n'est pas mise à jour",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Le produit est-il mis à jour toutes les semaines ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "46",
+      "dysfunction": "Trop de strates dans l'organisation",
+      "planet": "Source d'inspiration",
+      "star": "Product vision",
+      "question": "Y'a-t-il plusieurs validations hiérarchiques pour faire évoluer le produit ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "47",
+      "dysfunction": "La construction du produit est imposée",
+      "planet": "Raison d'être d'un produit",
+      "star": "Product vision",
+      "question": "Êtes-vous un manager ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "47",
+      "dysfunction": "La construction du produit est imposée",
+      "planet": "Raison d'être d'un produit",
+      "star": "Product vision",
+      "question": "Est-ce que votre produit a été *décidé* par une personne qui est en posture de *décideur* ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "47",
+      "dysfunction": "La construction du produit est imposée",
+      "planet": "Raison d'être d'un produit",
+      "star": "Product vision",
+      "question": "La mise en place de votre produit est-elle poussée par une démarche politique ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "47",
+      "dysfunction": "La construction du produit est imposée",
+      "planet": "Raison d'être d'un produit",
+      "star": "Product vision",
+      "question": "Les décisions sont-elles centralisées sur une seule personne ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "48",
+      "dysfunction": "Le problème est une invention",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "La problématique à laquelle vous tentez de répondre vient-elle des utilisateurs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "48",
+      "dysfunction": "Le problème est une invention",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "Le problème à résoudre est-il une perception du siège ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "49",
+      "dysfunction": "Absence d'objectif",
+      "planet": "Projection d'un objectif",
+      "star": "Product vision",
+      "question": "Le produit-il a un objectif ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "50",
+      "dysfunction": "L'équipe et les parties prenantes n'ont pas confiance en les utilisateurs",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Les utilisateurs accueillent-ils bien les nouveautés ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "50",
+      "dysfunction": "L'équipe et les parties prenantes n'ont pas confiance en les utilisateurs",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Les retours utilisateurs sont-ils pris en compte ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "51",
+      "dysfunction": "La vision n'est pas communiquée",
+      "planet": "Vision partagée",
+      "star": "Product vision",
+      "question": "Une campagne de communication (kick-off) a-t-elle eu lieu sur le produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "51",
+      "dysfunction": "La vision n'est pas communiquée",
+      "planet": "Vision partagée",
+      "star": "Product vision",
+      "question": "La vision est-elle connue de tous ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "52",
+      "dysfunction": "La raison d'être du produit n'a pas de sens car une solution existe déjà",
+      "planet": "Raison d'être d'un produit",
+      "star": "Product vision",
+      "question": "Avez-vous fait une étude concurrentielle avant de lancer le produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "52",
+      "dysfunction": "La raison d'être du produit n'a pas de sens car une solution existe déjà",
+      "planet": "Raison d'être d'un produit",
+      "star": "Product vision",
+      "question": "Existe-il une solution qui a un périmètre similaire ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "53",
+      "dysfunction": "Non communication sur le produit",
+      "planet": "Source d'inspiration",
+      "star": "Product vision",
+      "question": "Les utilisateurs connaissent-ils l'existence du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "54",
+      "dysfunction": "La vision est imposée",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Le Product Owner (le responsable du produit) a-t-il toujours le dernier mot ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "54",
+      "dysfunction": "La vision est imposée",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Le produit est-il intégré dans un projet qui a/va toucher plusieurs équipes/services ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "54",
+      "dysfunction": "La vision est imposée",
+      "planet": "Vision évolutive",
+      "star": "Product vision",
+      "question": "Un cahier des charges a-t-il été construit ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "55",
+      "dysfunction": "Absence de valeur",
+      "planet": "Générer de la valeur en fonction du problème",
+      "star": "Product vision",
+      "question": "Un lien quantifiable entre les objectifs et le résultat du produit existe-t-il ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "55",
+      "dysfunction": "Absence de valeur",
+      "planet": "Générer de la valeur en fonction du problème",
+      "star": "Product vision",
+      "question": "Il y a-t-il une remise en cause sur la valeur des fonctionnalités ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "56",
+      "dysfunction": "Le produit génère des problèmes",
+      "planet": "Générer de la valeur en fonction du problème",
+      "star": "Product vision",
+      "question": "La mise en place du produit a-t-elle généré de nouveaux problèmes pour les utilisateurs ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "56",
+      "dysfunction": "Le produit génère des problèmes",
+      "planet": "Générer de la valeur en fonction du problème",
+      "star": "Product vision",
+      "question": "Les utilisateurs ont-ils toujours le même irritant ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "57",
+      "dysfunction": "Le climat social n'est pas adapté pour remonter le problème",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "La culture d'entreprise permet-elle de faire remonter des informations à connotation négative ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "58",
+      "dysfunction": "Le produit n'a pas d'évolutivité",
+      "planet": "Trajectoire",
+      "star": "Product vision",
+      "question": "Le produit correspond-il aux attentes des utilisateurs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "58",
+      "dysfunction": "Le produit n'a pas d'évolutivité",
+      "planet": "Trajectoire",
+      "star": "Product vision",
+      "question": "Le produit est-il une refonte ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "59",
+      "dysfunction": "La raison d'être du produit est connue d'une seule personne",
+      "planet": "Raison d'être d'un produit",
+      "star": "Product vision",
+      "question": "Les membres de votre équipe connaissent-ils parfaitement la raison d'être du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "59",
+      "dysfunction": "La raison d'être du produit est connue d'une seule personne",
+      "planet": "Raison d'être d'un produit",
+      "star": "Product vision",
+      "question": "Y-a-t'il eu une cérémonie au lancement du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "60",
+      "dysfunction": "Equipe sceptique",
+      "planet": "Source d'inspiration",
+      "star": "Product vision",
+      "question": "L'équipe croit-elle dans son produit/service ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "60",
+      "dysfunction": "Equipe sceptique",
+      "planet": "Source d'inspiration",
+      "star": "Product vision",
+      "question": "L'équipe a-t-elle le soutien de la direction ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "61",
+      "dysfunction": "Les fonctionnalités et services sont des projets",
+      "planet": "Produit associé à ∈ services/fonctionnalité",
+      "star": "Product vision",
+      "question": "La construction d'une des fonctionnalités de votre produit a-t-elle dépassé les 6 mois ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "61",
+      "dysfunction": "Les fonctionnalités et services sont des projets",
+      "planet": "Produit associé à ∈ services/fonctionnalité",
+      "star": "Product vision",
+      "question": "La construction de vos fonctionnalités nécessitent-elles plus de 7 personnes parmi l'équipe de réalisation ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "62",
+      "dysfunction": "L'équipe a besoin d'être davantage guidée",
+      "planet": "Source d'inspiration",
+      "star": "Product vision",
+      "question": "Le leader sait-il motiver ses équipes ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "62",
+      "dysfunction": "L'équipe a besoin d'être davantage guidée",
+      "planet": "Source d'inspiration",
+      "star": "Product vision",
+      "question": "Les équipes ont-elles confiance dans leurs responsables ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "63",
+      "dysfunction": "Perte de raison d'être du produit",
+      "planet": "Trajectoire",
+      "star": "Product vision",
+      "question": "Le produit a-t-il de l'avenir ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "63",
+      "dysfunction": "Perte de raison d'être du produit",
+      "planet": "Trajectoire",
+      "star": "Product vision",
+      "question": "Le produit fait-il le café, le pain au chocolat et les sandwichs ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "63",
+      "dysfunction": "Perte de raison d'être du produit",
+      "planet": "Trajectoire",
+      "star": "Product vision",
+      "question": "Le produit risque-t-il d'être décommissionné ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "63",
+      "dysfunction": "Perte de raison d'être du produit",
+      "planet": "Trajectoire",
+      "star": "Product vision",
+      "question": "Le produit est-il issu d'une expérimentation qui a duré plus d'1 an ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "64",
+      "dysfunction": "Le problème identifié n'est pas le réel problème",
+      "planet": "Identification des problèmes",
+      "star": "Product vision",
+      "question": "Le produit/service va-t-il résoudre le principal irritant des utilisateurs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "66",
+      "dysfunction": "La fonctionnalité ou le service ne correspond pas à la raison d'être du produit",
+      "planet": "Produit associé à ∈ services/fonctionnalité",
+      "star": "Product vision",
+      "question": "Une de vos fonctionnalités a-t-elle été créée pour compenser le déficit d'un autre produit ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "66",
+      "dysfunction": "La fonctionnalité ou le service ne correspond pas à la raison d'être du produit",
+      "planet": "Produit associé à ∈ services/fonctionnalité",
+      "star": "Product vision",
+      "question": "Votre produit doit-il remplacer un produit obsolète sans nouvelle fonctionnalité ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    }
+  ],
+  "Strategie Produit": [
+    {
+      "id": "70",
+      "dysfunction": "Attendre d’avoir lancé le produit pour collecter des feedbacks",
+      "planet": "La planification du lancement du produit",
+      "star": "Product strategy",
+      "question": "Est-ce que vous collectez des feedbacks après le lancement du produit?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "70",
+      "dysfunction": "Attendre d’avoir lancé le produit pour collecter des feedbacks",
+      "planet": "La planification du lancement du produit",
+      "star": "Product strategy",
+      "question": "Avez-vous collecté des feedbacks avant le lancement du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "71",
+      "dysfunction": "Penser qu’on peut créer un besoin",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Pensez-vous créer un nouveau besoin ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "73",
+      "dysfunction": "Échec de l'intégration du produit avec les systèmes existants",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que le produit est intégré dans le système existant ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "73",
+      "dysfunction": "Échec de l'intégration du produit avec les systèmes existants",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que l'intégration du produit dans le système est compliqué ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "73",
+      "dysfunction": "Échec de l'intégration du produit avec les systèmes existants",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "L'intégration dans le système du produit ralentit-il le rythme de ce dernier ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "74",
+      "dysfunction": "Annoncer trop tôt une date de lancement",
+      "planet": "La planification du lancement du produit",
+      "star": "Product strategy",
+      "question": "Est-ce que la date de lancement est réaliste ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "74",
+      "dysfunction": "Annoncer trop tôt une date de lancement",
+      "planet": "La planification du lancement du produit",
+      "star": "Product strategy",
+      "question": "La date de lancement a-t-elle été vérifiée auprès des équipes de production ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "74",
+      "dysfunction": "Annoncer trop tôt une date de lancement",
+      "planet": "La planification du lancement du produit",
+      "star": "Product strategy",
+      "question": "Est-ce que la date de lancement est prévu avant la fin des tests du produit ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "75",
+      "dysfunction": "Ne pas oser traiter les objections",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Prenez-vous du temps pour évaluer les objections de vos utilisateurs / clients ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "75",
+      "dysfunction": "Ne pas oser traiter les objections",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Prenez-vous du temps pour répondre en apportant une réponse concrète à ce dernier ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "76",
+      "dysfunction": "Un suivi insuffisant des perfomances",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous un suivi des performances du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "76",
+      "dysfunction": "Un suivi insuffisant des perfomances",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous un plan d'action qui découle des perfomances du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "78",
+      "dysfunction": "Mal choisir son échantillon représentatif dans ces utilisateurs",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous un échantillon représentatif de vos utilisateurs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "78",
+      "dysfunction": "Mal choisir son échantillon représentatif dans ces utilisateurs",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Cet échantillon est-il représentatif de l'ensemble des utilisateurs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "78",
+      "dysfunction": "Mal choisir son échantillon représentatif dans ces utilisateurs",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Cet échantillon contient-il l'ensemble des catégories de vos utilisateurs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "79",
+      "dysfunction": "Non prise en compte des retours des utilisateurs dans les développements du produit",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Prenez-vous en compte les retours des utilisateurs en les intégrant dans le développement du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "80",
+      "dysfunction": "Ne prévoir aucun plan d’action pour le jour du lancement du produit",
+      "planet": "La planification du lancement du produit",
+      "star": "Product strategy",
+      "question": "Avez-vous prévu un plan d'action pour le jour du lancement du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "81",
+      "dysfunction": "Internet est la seule source de recherche",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous recours à d'autres sources d'informations qu'Internet pour mener votre recherche ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "82",
+      "dysfunction": "Mauvaise priorisation des fonctionnalités du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que vous priorisez vos fonctionnalités ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "82",
+      "dysfunction": "Mauvaise priorisation des fonctionnalités du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Les utilisateurs sont-ils au courant de ces priorisations ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "82",
+      "dysfunction": "Mauvaise priorisation des fonctionnalités du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Sont-ils d'accord avec ceux là ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "82",
+      "dysfunction": "Mauvaise priorisation des fonctionnalités du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Limitez-vous à la création de nouvelles fonctionnalités ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "82",
+      "dysfunction": "Mauvaise priorisation des fonctionnalités du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Limitez-vous à l'amélioration de nouvelles fonctionnalités ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "82",
+      "dysfunction": "Mauvaise priorisation des fonctionnalités du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous identifié les principales fonctionnalités à mettre en oeuvre en priorité ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "83",
+      "dysfunction": "Ne pas anticiper les tendances du marché",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Êtes-vous à l'écoute des tendances du marché ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "83",
+      "dysfunction": "Ne pas anticiper les tendances du marché",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Prenez-vous en compte ces tendances dans votre stratégie produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "84",
+      "dysfunction": "Établir une stratégie de communication réductrice",
+      "planet": "Les activités marketing pour promouvoir le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Communiquez-vous régulièrement sur votre produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "85",
+      "dysfunction": "Tout miser sur sa communication et son image de marque",
+      "planet": "Les activités marketing pour promouvoir le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que votre objectif principal est toujours de maximiser votre communication et votre image de marque, même si cela peut nuire à la qualité ou à la rentabilité de votre produit ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "87",
+      "dysfunction": "Mauvaise gestion des ressources pour le développement et la maintenance du produit",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous assez de ressources pour construire votre produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "87",
+      "dysfunction": "Mauvaise gestion des ressources pour le développement et la maintenance du produit",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous assez de ressources pour gérer la maintenance du produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "87",
+      "dysfunction": "Mauvaise gestion des ressources pour le développement et la maintenance du produit",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que votre équipe est surchargée ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "87",
+      "dysfunction": "Mauvaise gestion des ressources pour le développement et la maintenance du produit",
+      "planet": "La gestion du cycle de vie du produit dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que votre équipe a des creux de charges ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "88",
+      "dysfunction": "Communication insuffisante entre les équipes de développements, de marketing et de vente",
+      "planet": "Raison d'être de la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que les équipes de développement, de marketing et de ventes échangent entre elles sur le produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "89",
+      "dysfunction": "Erreur sur la cible de marché du produit",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous une cible de marché ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "89",
+      "dysfunction": "Erreur sur la cible de marché du produit",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce qu'elle est définit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "89",
+      "dysfunction": "Erreur sur la cible de marché du produit",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous des indicateurs sur le suivi de votre cible ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "90",
+      "dysfunction": "Ne pas avoir un modèle économique solide",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous un modèle économique ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "91",
+      "dysfunction": "Manque de mise à jour ou d'adaptation du produit par rapport aux changements du marché",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Connaissez-vous votre marché ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "91",
+      "dysfunction": "Manque de mise à jour ou d'adaptation du produit par rapport aux changements du marché",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Connaissez-vous les tendances du moment sur votre marché ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "91",
+      "dysfunction": "Manque de mise à jour ou d'adaptation du produit par rapport aux changements du marché",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Votre produit est-il adapté aux tendances de votre marché ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "91",
+      "dysfunction": "Manque de mise à jour ou d'adaptation du produit par rapport aux changements du marché",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Votre produit se démarque-t-il clairement des autres produits concurrents?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "92",
+      "dysfunction": "Un prix qui ne correspond ni au marché ni au positionnement",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous fait une étude concernant les prix de votre marché ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "92",
+      "dysfunction": "Un prix qui ne correspond ni au marché ni au positionnement",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous fait une étude concernant les prix dans votre positionnement ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "92",
+      "dysfunction": "Un prix qui ne correspond ni au marché ni au positionnement",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Vos prix sont-ils en lien avec votre marché et votre positionnement ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "94",
+      "dysfunction": "Sous-estimer le marché concurrentiel",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Connaissez-vous le marché concurrentiel ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "94",
+      "dysfunction": "Sous-estimer le marché concurrentiel",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "L'avez-vous étudié ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "94",
+      "dysfunction": "Sous-estimer le marché concurrentiel",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que vous avez une bonne compréhension des stratégies concurrentielles et des tendances du marché ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "100",
+      "dysfunction": "Être trop axé sur la technologie",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Mettez-vous plus en avant les bienfaits technologiques du produit plutôt que sa valeur ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "100",
+      "dysfunction": "Être trop axé sur la technologie",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Faîtes-vous passer en priorité la technique plutôt que les fonctionnalités ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "101",
+      "dysfunction": "Surévaluer votre produit ou service",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous des indicateurs de performances pour suivre votre produit / service ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "101",
+      "dysfunction": "Surévaluer votre produit ou service",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Comparez-vous votre produit / services à vos concurrents ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "103",
+      "dysfunction": "Manque de qualité du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que votre produit répond aux attentes des utilisateurs/clients ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "103",
+      "dysfunction": "Manque de qualité du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que votre produit génère de la frustration ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "103",
+      "dysfunction": "Manque de qualité du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Votre produit est-il performant ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "103",
+      "dysfunction": "Manque de qualité du produit",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Êtes-vous satisfait de la qualité de votre produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "104",
+      "dysfunction": "Présenter toutes les fonctionnalités du produit ou du service",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Êtes-vous clair dans la présentation de votre produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "104",
+      "dysfunction": "Présenter toutes les fonctionnalités du produit ou du service",
+      "planet": "La définition des fonctionnalités dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Lors de la présentation de votre produit, présentez-vous l'ensemble des fonctionnalités du produit ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "105",
+      "dysfunction": "Dissocier totalement les activités marketing et les activités de ventes",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous des activités marketing ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "105",
+      "dysfunction": "Dissocier totalement les activités marketing et les activités de ventes",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous des activités de vente ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "105",
+      "dysfunction": "Dissocier totalement les activités marketing et les activités de ventes",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Ces activités sont-elles dissociées ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "105",
+      "dysfunction": "Dissocier totalement les activités marketing et les activités de ventes",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Travaillent-t-elles ensemble ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "105",
+      "dysfunction": "Dissocier totalement les activités marketing et les activités de ventes",
+      "planet": "Les activités de vente pour vendre le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Ont-elles des objectifs individuelles et collectives ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "107",
+      "dysfunction": "Attendre des résultats trop rapides",
+      "planet": "La planification du lancement du produit",
+      "star": "Product strategy",
+      "question": "Est-ce que vous attendez des résultats de votre produit à court terme ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "107",
+      "dysfunction": "Attendre des résultats trop rapides",
+      "planet": "La planification du lancement du produit",
+      "star": "Product strategy",
+      "question": "Est-ce que vous attendez des résultats de votre produit à plus long terme ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "108",
+      "dysfunction": "Être mal référencé",
+      "planet": "Les activités marketing pour promouvoir le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que le marché vous connait ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "108",
+      "dysfunction": "Être mal référencé",
+      "planet": "Les activités marketing pour promouvoir le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que votre entreprise est bien référencée sur les moteurs de recherche ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "108",
+      "dysfunction": "Être mal référencé",
+      "planet": "Les activités marketing pour promouvoir le produit en lien avec la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que votre entreprise est bien référencée sur les réseaux sociaux?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "111",
+      "dysfunction": "Sonder le marché avec des questions approximatives",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous des questions spécifiques pour sonder le marché ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "111",
+      "dysfunction": "Sonder le marché avec des questions approximatives",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Préférez-vous une approche plus large et générale pour sonder le marché ?",
+      "flag": 0,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "113",
+      "dysfunction": "Une stratégie de tarification peu claire ou mal adaptée",
+      "planet": "Raison d'être de la stratégie produit",
+      "star": "Product strategy",
+      "question": "La stratégie est-elle claire ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "113",
+      "dysfunction": "Une stratégie de tarification peu claire ou mal adaptée",
+      "planet": "Raison d'être de la stratégie produit",
+      "star": "Product strategy",
+      "question": "La stratégie est-elle liée aux objectifs de l'entreprise ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "116",
+      "dysfunction": "Choisir une zone géographique trop réduite pour le marché",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Est-ce que votre zone géographique est suffisamment large pour atteindre vos objectifs ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "116",
+      "dysfunction": "Choisir une zone géographique trop réduite pour le marché",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Avez-vous envisagé de cibler des zones géographiques pour votre activité?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "117",
+      "dysfunction": "Oublier de faire une veille juridique",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Faites-vous un veille juridique sur le sujet abordé ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    },
+    {
+      "id": "117",
+      "dysfunction": "Oublier de faire une veille juridique",
+      "planet": "La recherche de marché dans la stratégie produit",
+      "star": "Product strategy",
+      "question": "Prenez-vous en compte cette veille dans la stratégie de votre produit ?",
+      "flag": 1,
+      "options": [
+        "oui",
+        "non"
+      ]
+    }
+  ],
+  "answers": [
+    {
+      "0": {
+        "question": "Une enquête a-t-elle été effectuée auprès des utilisateurs ?",
+        "answer": "0"
+      },
+      "1": {
+        "question": "La version simplifiée et fonctionnelle du produit reflète-t-elle une hypothèse ?",
+        "answer": "1"
+      },
+      "2": {
+        "question": "Les utilisateurs donnent-ils leurs avis sur le produit et ses fonctionnalités ?",
+        "answer": "0"
+      },
+      "3": {
+        "question": "La vision est-elle comprise de tous ?",
+        "answer": "1"
+      },
+      "4": {
+        "question": "La vision peut-elle être répétée en une seule phrase ?",
+        "answer": "0"
+      },
+      "5": {
+        "question": "L'objectif du produit peut-il être réalisable dans une période d'un an ?",
+        "answer": "1"
+      },
+      "6": {
+        "question": "L'objectif du produit est-il compris de tous ?",
+        "answer": "1"
+      },
+      "7": {
+        "question": "Est-ce que quelqu'un décide de tout dans l'équipe ?",
+        "answer": "1"
+      },
+      "8": {
+        "question": "Les utilisateurs sont-ils informés des nouvelles fonctionnalités du produit ?",
+        "answer": "1"
+      },
+      "9": {
+        "question": "Le produit est-il sous contrainte légale ?",
+        "answer": "1"
+      },
+      "10": {
+        "question": "Le produit corrige-t-il d'autres problèmes ?",
+        "answer": "1"
+      },
+      "11": {
+        "question": "Y-a-t'il une majorité de managers parmi les utilisateurs ?",
+        "answer": "1"
+      },
+      "12": {
+        "question": "Faites-vous varier votre panel d'utilisateurs interrogés chaque trimestre ?",
+        "answer": "1"
+      },
+      "13": {
+        "question": "Votre cible d'utilisateurs fait-elle partie du management ?",
+        "answer": "1"
+      },
+      "14": {
+        "question": "La mise en place de votre produit est-elle en adéquation avec les retours des utilisateurs ?",
+        "answer": "1"
+      },
+      "15": {
+        "question": "Le siège impose-t-il un processus métier ?",
+        "answer": "1"
+      },
+      "16": {
+        "question": "La vision produit est-elle mise à jour régulièrement ? (environ tous les trimestres)",
+        "answer": "1"
+      },
+      "17": {
+        "question": "Les utilisateurs acceptent-ils le changement continu ?",
+        "answer": "1"
+      },
+      "18": {
+        "question": "Les nouvelles fonctionnalités du produit sont-elles proposées au moins une fois par mois ?",
+        "answer": "1"
+      },
+      "19": {
+        "question": "Le produit est-il mis à jour toutes les semaines ?",
+        "answer": "1"
+      },
+      "20": {
+        "question": "Y'a-t-il plusieurs validations hiérarchiques pour faire évoluer le produit ?",
+        "answer": "1"
+      },
+      "21": {
+        "question": "Êtes-vous un manager ?",
+        "answer": "1"
+      },
+      "22": {
+        "question": "Est-ce que votre produit a été *décidé* par une personne qui est en posture de *décideur* ?",
+        "answer": "1"
+      },
+      "23": {
+        "question": "La mise en place de votre produit est-elle poussée par une démarche politique ?",
+        "answer": "1"
+      },
+      "24": {
+        "question": "Les décisions sont-elles centralisées sur une seule personne ?",
+        "answer": "1"
+      },
+      "25": {
+        "question": "La problématique à laquelle vous tentez de répondre vient-elle des utilisateurs ?",
+        "answer": "1"
+      },
+      "26": {
+        "question": "Le problème à résoudre est-il une perception du siège ?",
+        "answer": "1"
+      },
+      "27": {
+        "question": "Le produit-il a un objectif ?",
+        "answer": "1"
+      },
+      "28": {
+        "question": "Les utilisateurs accueillent-ils bien les nouveautés ?",
+        "answer": "1"
+      },
+      "29": {
+        "question": "Les retours utilisateurs sont-ils pris en compte ?",
+        "answer": "1"
+      },
+      "30": {
+        "question": "Une campagne de communication (kick-off) a-t-elle eu lieu sur le produit ?",
+        "answer": "1"
+      },
+      "31": {
+        "question": "La vision est-elle connue de tous ?",
+        "answer": "1"
+      },
+      "32": {
+        "question": "Avez-vous fait une étude concurrentielle avant de lancer le produit ?",
+        "answer": "1"
+      },
+      "33": {
+        "question": "Existe-il une solution qui a un périmètre similaire ?",
+        "answer": "1"
+      },
+      "34": {
+        "question": "Les utilisateurs connaissent-ils l'existence du produit ?",
+        "answer": "1"
+      },
+      "35": {
+        "question": "Le Product Owner (le responsable du produit) a-t-il toujours le dernier mot ?",
+        "answer": "1"
+      },
+      "36": {
+        "question": "Le produit est-il intégré dans un projet qui a/va toucher plusieurs équipes/services ?",
+        "answer": "1"
+      },
+      "37": {
+        "question": "Un cahier des charges a-t-il été construit ?",
+        "answer": "1"
+      },
+      "38": {
+        "question": "Un lien quantifiable entre les objectifs et le résultat du produit existe-t-il ?",
+        "answer": "1"
+      },
+      "39": {
+        "question": "Il y a-t-il une remise en cause sur la valeur des fonctionnalités ?",
+        "answer": "1"
+      },
+      "40": {
+        "question": "La mise en place du produit a-t-elle généré de nouveaux problèmes pour les utilisateurs ?",
+        "answer": "1"
+      },
+      "41": {
+        "question": "Les utilisateurs ont-ils toujours le même irritant ?",
+        "answer": "1"
+      },
+      "42": {
+        "question": "La culture d'entreprise permet-elle de faire remonter des informations à connotation négative ?",
+        "answer": "1"
+      },
+      "43": {
+        "question": "Le produit correspond-il aux attentes des utilisateurs ?",
+        "answer": "1"
+      },
+      "44": {
+        "question": "Le produit est-il une refonte ?",
+        "answer": "1"
+      },
+      "45": {
+        "question": "Les membres de votre équipe connaissent-ils parfaitement la raison d'être du produit ?",
+        "answer": "1"
+      },
+      "46": {
+        "question": "Y-a-t'il eu une cérémonie au lancement du produit ?",
+        "answer": "1"
+      },
+      "47": {
+        "question": "L'équipe croit-elle dans son produit/service ?",
+        "answer": "1"
+      },
+      "48": {
+        "question": "L'équipe a-t-elle le soutien de la direction ?",
+        "answer": "1"
+      },
+      "49": {
+        "question": "La construction d'une des fonctionnalités de votre produit a-t-elle dépassé les 6 mois ?",
+        "answer": "1"
+      },
+      "50": {
+        "question": "La construction de vos fonctionnalités nécessitent-elles plus de 7 personnes parmi l'équipe de réalisation ?",
+        "answer": "1"
+      },
+      "51": {
+        "question": "Le leader sait-il motiver ses équipes ?",
+        "answer": "1"
+      },
+      "52": {
+        "question": "Les équipes ont-elles confiance dans leurs responsables ?",
+        "answer": "1"
+      },
+      "53": {
+        "question": "Le produit a-t-il de l'avenir ?",
+        "answer": "1"
+      },
+      "54": {
+        "question": "Le produit fait-il le café, le pain au chocolat et les sandwichs ?",
+        "answer": "1"
+      },
+      "55": {
+        "question": "Le produit risque-t-il d'être décommissionné ?",
+        "answer": "1"
+      },
+      "56": {
+        "question": "Le produit est-il issu d'une expérimentation qui a duré plus d'1 an ?",
+        "answer": "1"
+      },
+      "57": {
+        "question": "Le produit/service va-t-il résoudre le principal irritant des utilisateurs ?",
+        "answer": "1"
+      },
+      "58": {
+        "question": "Une de vos fonctionnalités a-t-elle été créée pour compenser le déficit d'un autre produit ?",
+        "answer": "1"
+      },
+      "59": {
+        "question": "Votre produit doit-il remplacer un produit obsolète sans nouvelle fonctionnalité ?",
+        "answer": "1"
+      },
+      "id": "0193"
+    },
+    {
+      "0": {
+        "question": "Une enquête a-t-elle été effectuée auprès des utilisateurs ?",
+        "answer": "0"
+      },
+      "1": {
+        "question": "La version simplifiée et fonctionnelle du produit reflète-t-elle une hypothèse ?",
+        "answer": "1"
+      },
+      "2": {
+        "question": "Les utilisateurs donnent-ils leurs avis sur le produit et ses fonctionnalités ?",
+        "answer": "0"
+      },
+      "3": {
+        "question": "La vision est-elle comprise de tous ?",
+        "answer": "1"
+      },
+      "4": {
+        "question": "La vision peut-elle être répétée en une seule phrase ?",
+        "answer": "0"
+      },
+      "5": {
+        "question": "L'objectif du produit peut-il être réalisable dans une période d'un an ?",
+        "answer": "1"
+      },
+      "6": {
+        "question": "L'objectif du produit est-il compris de tous ?",
+        "answer": "0"
+      },
+      "7": {
+        "question": "Est-ce que quelqu'un décide de tout dans l'équipe ?",
+        "answer": "1"
+      },
+      "8": {
+        "question": "Les utilisateurs sont-ils informés des nouvelles fonctionnalités du produit ?",
+        "answer": "0"
+      },
+      "9": {
+        "question": "Le produit est-il sous contrainte légale ?",
+        "answer": "0"
+      },
+      "10": {
+        "question": "Le produit corrige-t-il d'autres problèmes ?",
+        "answer": "1"
+      },
+      "11": {
+        "question": "Y-a-t'il une majorité de managers parmi les utilisateurs ?",
+        "answer": "0"
+      },
+      "12": {
+        "question": "Faites-vous varier votre panel d'utilisateurs interrogés chaque trimestre ?",
+        "answer": "1"
+      },
+      "13": {
+        "question": "Votre cible d'utilisateurs fait-elle partie du management ?",
+        "answer": "0"
+      },
+      "14": {
+        "question": "La mise en place de votre produit est-elle en adéquation avec les retours des utilisateurs ?",
+        "answer": "1"
+      },
+      "15": {
+        "question": "Le siège impose-t-il un processus métier ?",
+        "answer": "1"
+      },
+      "16": {
+        "question": "La vision produit est-elle mise à jour régulièrement ? (environ tous les trimestres)",
+        "answer": "0"
+      },
+      "17": {
+        "question": "Les utilisateurs acceptent-ils le changement continu ?",
+        "answer": "1"
+      },
+      "18": {
+        "question": "Les nouvelles fonctionnalités du produit sont-elles proposées au moins une fois par mois ?",
+        "answer": "0"
+      },
+      "19": {
+        "question": "Le produit est-il mis à jour toutes les semaines ?",
+        "answer": "1"
+      },
+      "20": {
+        "question": "Y'a-t-il plusieurs validations hiérarchiques pour faire évoluer le produit ?",
+        "answer": "0"
+      },
+      "21": {
+        "question": "Êtes-vous un manager ?",
+        "answer": "1"
+      },
+      "22": {
+        "question": "Est-ce que votre produit a été *décidé* par une personne qui est en posture de *décideur* ?",
+        "answer": "0"
+      },
+      "23": {
+        "question": "La mise en place de votre produit est-elle poussée par une démarche politique ?",
+        "answer": "1"
+      },
+      "24": {
+        "question": "Les décisions sont-elles centralisées sur une seule personne ?",
+        "answer": "0"
+      },
+      "25": {
+        "question": "La problématique à laquelle vous tentez de répondre vient-elle des utilisateurs ?",
+        "answer": "1"
+      },
+      "26": {
+        "question": "Le problème à résoudre est-il une perception du siège ?",
+        "answer": "1"
+      },
+      "27": {
+        "question": "Le produit-il a un objectif ?",
+        "answer": "0"
+      },
+      "28": {
+        "question": "Les utilisateurs accueillent-ils bien les nouveautés ?",
+        "answer": "1"
+      },
+      "29": {
+        "question": "Les retours utilisateurs sont-ils pris en compte ?",
+        "answer": "0"
+      },
+      "30": {
+        "question": "Une campagne de communication (kick-off) a-t-elle eu lieu sur le produit ?",
+        "answer": "1"
+      },
+      "31": {
+        "question": "La vision est-elle connue de tous ?",
+        "answer": "1"
+      },
+      "32": {
+        "question": "Avez-vous fait une étude concurrentielle avant de lancer le produit ?",
+        "answer": "0"
+      },
+      "33": {
+        "question": "Existe-il une solution qui a un périmètre similaire ?",
+        "answer": "1"
+      },
+      "34": {
+        "question": "Les utilisateurs connaissent-ils l'existence du produit ?",
+        "answer": "1"
+      },
+      "35": {
+        "question": "Le Product Owner (le responsable du produit) a-t-il toujours le dernier mot ?",
+        "answer": "1"
+      },
+      "36": {
+        "question": "Le produit est-il intégré dans un projet qui a/va toucher plusieurs équipes/services ?",
+        "answer": "0"
+      },
+      "37": {
+        "question": "Un cahier des charges a-t-il été construit ?",
+        "answer": "1"
+      },
+      "38": {
+        "question": "Un lien quantifiable entre les objectifs et le résultat du produit existe-t-il ?",
+        "answer": "1"
+      },
+      "39": {
+        "question": "Il y a-t-il une remise en cause sur la valeur des fonctionnalités ?",
+        "answer": "1"
+      },
+      "40": {
+        "question": "La mise en place du produit a-t-elle généré de nouveaux problèmes pour les utilisateurs ?",
+        "answer": "1"
+      },
+      "41": {
+        "question": "Les utilisateurs ont-ils toujours le même irritant ?",
+        "answer": "1"
+      },
+      "42": {
+        "question": "La culture d'entreprise permet-elle de faire remonter des informations à connotation négative ?",
+        "answer": "1"
+      },
+      "43": {
+        "question": "Le produit correspond-il aux attentes des utilisateurs ?",
+        "answer": "1"
+      },
+      "44": {
+        "question": "Le produit est-il une refonte ?",
+        "answer": "0"
+      },
+      "45": {
+        "question": "Les membres de votre équipe connaissent-ils parfaitement la raison d'être du produit ?",
+        "answer": "1"
+      },
+      "46": {
+        "question": "Y-a-t'il eu une cérémonie au lancement du produit ?",
+        "answer": "1"
+      },
+      "47": {
+        "question": "L'équipe croit-elle dans son produit/service ?",
+        "answer": "1"
+      },
+      "48": {
+        "question": "L'équipe a-t-elle le soutien de la direction ?",
+        "answer": "1"
+      },
+      "49": {
+        "question": "La construction d'une des fonctionnalités de votre produit a-t-elle dépassé les 6 mois ?",
+        "answer": "0"
+      },
+      "50": {
+        "question": "La construction de vos fonctionnalités nécessitent-elles plus de 7 personnes parmi l'équipe de réalisation ?",
+        "answer": "1"
+      },
+      "51": {
+        "question": "Le leader sait-il motiver ses équipes ?",
+        "answer": "1"
+      },
+      "52": {
+        "question": "Les équipes ont-elles confiance dans leurs responsables ?",
+        "answer": "1"
+      },
+      "53": {
+        "question": "Le produit a-t-il de l'avenir ?",
+        "answer": "1"
+      },
+      "54": {
+        "question": "Le produit fait-il le café, le pain au chocolat et les sandwichs ?",
+        "answer": "1"
+      },
+      "55": {
+        "question": "Le produit risque-t-il d'être décommissionné ?",
+        "answer": "0"
+      },
+      "56": {
+        "question": "Le produit est-il issu d'une expérimentation qui a duré plus d'1 an ?",
+        "answer": "1"
+      },
+      "57": {
+        "question": "Le produit/service va-t-il résoudre le principal irritant des utilisateurs ?",
+        "answer": "1"
+      },
+      "58": {
+        "question": "Une de vos fonctionnalités a-t-elle été créée pour compenser le déficit d'un autre produit ?",
+        "answer": "1"
+      },
+      "59": {
+        "question": "Votre produit doit-il remplacer un produit obsolète sans nouvelle fonctionnalité ?",
+        "answer": "1"
+      },
+      "id": "8085"
+    }
+  ]
+}
