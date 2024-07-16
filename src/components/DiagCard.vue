@@ -5,8 +5,8 @@
       <p>{{ currentParagraph }}</p>
       <button @click="navigateToSurvey">{{ buttonText }}</button>
       <div class="navigation">
-        <button @click="prevItem">←</button>
-        <button @click="nextItem">→</button>
+        <button @click="prevItem" :disabled="previousButtonDisable">←</button>
+        <button @click="nextItem" :disabled="nextButtonDisable">→</button>
       </div>
     </div>
   </template>
@@ -68,6 +68,13 @@ const nextItem = () => {
       }
     };
 
+const previousButtonDisable = computed(() =>{
+  return currentIndex.value ===0;
+})
+const nextButtonDisable = computed(() => {
+  return currentIndex.value === items.length - 1;
+});
+
 </script>
 
 <style scoped>
@@ -98,5 +105,8 @@ button {
 }
 button:hover {
   background-color: #3700b3;
+}
+button:disabled{
+  opacity: 50%;
 }
 </style>

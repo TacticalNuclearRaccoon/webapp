@@ -16,7 +16,7 @@
         </button>
       </div>
       <div v-if="stateZero">
-        <p>Please choose a planet</p>
+        <p>Choisissez une famille de dysfonctionnement pour commencer</p>
       </div>
       <div v-else>
         <h2>{{ currentPlanetName }}</h2>
