@@ -1,38 +1,41 @@
 <template>
   <div class="survey-container">
-    <h1>{{ ediag }}</h1>
     <section v-if="loading">
       <p>Loading...</p>
     </section>
-    <section v-if="!diagCompleted && !loading">
-      <div class="tabs" v-if="planets.length">
-        <button 
-          v-for="(planet, index) in planets" 
-          :key="index" 
-          :class="{'active-tab': currentPlanetName === planet}"
-          @click="selectPlanet(planet)">
-          {{ planet }}
-        </button>
-      </div>
-      <div v-if="stateZero">
-        <p>Choisissez une famille de dysfonctionnement pour commencer</p>
-      </div>
-      <div v-else>
-        <h2>{{ currentPlanetName }}</h2>
+    <section v-if="!diagCompleted && !loading" class="survey-content">
+      <div class="side-container">
+        <div class="tabs" v-if="planets.length">
+          <button 
+            v-for="(planet, index) in planets" 
+            :key="index" 
+            :class="{'active-tab': currentPlanetName === planet}"
+            @click="selectPlanet(planet)">
+            {{ planet }}
+          </button>
+        </div>
         <div class="progress-container">
           <ProgressBar :bgcolor="'#6a1b9a'" :completed="currentPlanetProgress" />
-          <span>{{ currentPlanetProgress }}% complété</span>
+          <span></span>
         </div>
-        <div class="main-text" v-if="getCurrentQuestion">
-          <span>{{ getCurrentQuestion.question }}</span>
+      </div>
+      <div class="main-container">
+        <div v-if="stateZero">
+          <p>Choisissez une famille de dysfonctionnement pour commencer</p>
         </div>
-        <div v-if="getCurrentQuestion">
-          <div class="radio-item" v-for="(option, index) in getCurrentQuestion.options" :key="index">
-            <input type="radio" :id="'radio' + index" :name="getCurrentQuestion.index" :value="index" v-model="getCurrentQuestion.selected" @change="setAnswer" />
-            <label :for="'radio' + index">{{ option }}</label>
+        <div v-else>
+          <h2>{{ currentPlanetName }}</h2>
+          <div class="main-text" v-if="getCurrentQuestion">
+            <span>{{ getCurrentQuestion.question }}</span>
           </div>
+          <div v-if="getCurrentQuestion">
+            <div class="radio-item" v-for="(option, index) in getCurrentQuestion.options" :key="index">
+              <input type="radio" :id="'radio' + index" :name="getCurrentQuestion.index" :value="index" v-model="getCurrentQuestion.selected" @change="setAnswer" />
+              <label :for="'radio' + index">{{ option }}</label>
+            </div>
+          </div>
+          <button class="btn-grad" @click="nextQuestion" :disabled="isButtonDisabled()">{{ getButtonText() }}</button>
         </div>
-        <button class="btn-grad" @click="nextQuestion" :disabled="isButtonDisabled()">{{ getButtonText() }}</button>
       </div>
     </section>
     <section v-else-if="diagCompleted">
@@ -59,6 +62,7 @@ const diagCompleted = ref(false);
 const currentQuestion = ref(0);
 const loading = ref(true);
 const ediag = diagName.value;
+const currentPlanet = ref(null);
 
 const fetchQuestions = async () => {
   try {
@@ -71,6 +75,9 @@ const fetchQuestions = async () => {
       return acc;
     }, {});
     questions.value = groupedQuestions;
+    if (planets.value.length > 0) {
+      currentPlanet.value = planets.value[0];
+    }
     loading.value = false;
   } catch (error) {
     console.log("Error fetching questions:", error);
@@ -101,7 +108,6 @@ watch(route, (newRoute) => {
 });
 
 const planets = computed(() => Object.keys(questions.value));
-const currentPlanet = ref(planets.value[0]);
 const currentPlanetName = computed(() => currentPlanet.value);
 const currentPlanetQuestions = computed(() => questions.value[currentPlanet.value] || []);
 
@@ -164,6 +170,7 @@ const navigateToForms = () => {
   changeValue();
   router.push({ name: 'Forms' });
 };
+
 </script>
 
 <style scoped>
@@ -175,18 +182,63 @@ p {
 }
 .survey-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   margin: 0px;
-}
-.main-text {
-  background-color: white;
-  color: #250070;
-  border-radius: 5px;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
   width: 100%;
+}
+
+.survey-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.side-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 20px;
+  border-right: 2px solid #ece9e9;
+}
+
+.tabs {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tabs button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #ece9e9;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.tabs button.active-tab {
+  background-color: #dcdcdc;
+}
+
+.main-container {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.main-text {
+  width: 50%;
+  display: flex;
+  position: relative;
+  padding: 25%;
+  box-shadow: 0px 14px 44px rgba(37, 0, 112, 0.2);
+  border-radius: 8px;
+  background-color: #fff;
+  height: 50%;
+  text-align: center;
+  font-size: 24px;
+  color: #250070;
   font-family: 'Azo Sans';
 }
 
@@ -196,16 +248,17 @@ p {
   width: 50%;
 }
 
-.progress-bar {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 1rem;
+.progress-container{
+  width: 100%;
+  position: relative;
+  border-radius: 40px;
+  background-color: rgba(243, 99, 17, 0.1);
+  height: 16px;
 }
 
 .btn-grad {
   background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff  51%, #ff6e7f  100%);
-  margin: 10px;
-  padding: 15px 45px;
+  padding: 10px 40px;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
@@ -213,15 +266,11 @@ p {
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
   display: block;
-  font-weight: 700;
+  font-weight: 100;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
-.btn-grad:hover {
-  background-position: right center;
-  color: #fff;
-  text-decoration: none;
-}
 .btn-grad:disabled {
   opacity: 0.5;
 }
@@ -232,100 +281,36 @@ p {
 }
 
 .radio-item + .radio-item {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .radio-item label {
   display: block;
-  padding: 20px 60px;
+  padding: 10px 60px;
   background: #ece9e9;
   border: 4px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 18px;
   font-weight: 400;
-  min-width: 250px;
-  white-space: nowrap;
   position: relative;
-  transition: 0.4s ease-in-out 0s;
 }
 
-.radio-item label:after,
-.radio-item label:before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-}
 
 .radio-item label:after {
-  height: 19px;
-  width: 19px;
-  border: 2px solid #524eee;
-  left: 19px;
-  top: calc(50% - 12px);
+  background-image: linear-gradient(145deg, #bfbfbf, #ececec);
+  box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.2) inset,
+    0px -4px 4px 0px rgba(255, 255, 255, 0.2) inset,
+    0px 4px 8px 0px rgba(255, 255, 255, 0.25) inset;
 }
 
-.radio-item label:before {
-  background: #524eee;
-  border: 2px solid #524eee;
-  height: 19px;
-  width: 19px;
-  left: 19px;
-  top: calc(50% - 12px);
-  transform: scale(5);
-  opacity: 0;
-  visibility: hidden;
+.radio-item input:checked + label {
+  border: 4px solid #9f3ed5;
+  color: #250070;
 }
 
-.radio-item [type="radio"]:checked ~ label {
-  border-color: #524eee;
+.radio-item input:checked + label:before {
+  background-color: #9f3ed5;
+  background-image: linear-gradient(145deg, #b060e5, #9f3ed5);
 }
-
-.radio-item [type="radio"]:checked ~ label::before {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-}
-
-/*Styles for planet tabs*/
-.tabs {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.tabs button {
-  margin-right: 10px;
-  padding: 10px;
-  border: none;
-  background: linear-gradient(90deg, #8e2de2, #4a00e0);
-  color: #fff;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.tabs button.active-tab {
-  background: #41015e;
-  color: white;
-}
-
-.survey-container .btn-grad {
-  margin-top: 20px;
-}
-
-.next-btn {
-  background-color: white;
-  color: black;
-  border: 2px solid #f78181;
-  align-self: center;
-  font-size: 1.25rem;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-.progress-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 </style>
