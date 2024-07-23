@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import DiagCard from '/Users/deni-kun/Documents/v2/plastik/src/components/DiagCard.vue';
 import SurveyView from '/Users/deni-kun/Documents/v2/plastik/src/components/SurveyView.vue';
 import FormsView from '/Users/deni-kun/Documents/v2/plastik/src/components/FormsView.vue';
-import CarouselView from '/Users/deni-kun/Documents/v2/plastik/src/components/CarouselView.vue'
+import CarouselMenu from '@/components/CarouselMenu.vue';
 
 const routes = [
   {
@@ -23,8 +23,8 @@ const routes = [
   },
   {
     path: '/carousel',
-    name: 'Carousel',
-    component: CarouselView
+    name: 'Menu',
+    component: CarouselMenu
   }
 ];
 
