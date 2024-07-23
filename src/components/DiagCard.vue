@@ -42,22 +42,7 @@ const items = [
     image: 'src/assets/image3.png',
     header: 'Strategie Produit',
     paragraph: "Le e-diagnostic se déroule sur le thème Stratégie Produit."
-  },
-  {
-    image: 'src/assets/comite.png',
-    header: "Collaborer au sein d'une comité de direction",
-    paragraph: "Le e-diagnostic se déroule sur le thème Collaborer au sein d'une comité de direction"
-  },
-  {
-    image: 'src/assets/competences.png',
-    header: "Géstion des Compétences",
-    paragraph: "Le e-diagnostic se déroule sur le thème Géstion de Compétences."
-  },
-  {
-    image: 'src/assets/qualite.png',
-    header: 'Qualité',
-    paragraph: "Le e-diagnostic se déroule sur le thème Qualité Produit."
-  },
+  }
 ];
 
 const buttonText = 'Essayez maintenant';

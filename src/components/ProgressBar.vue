@@ -21,7 +21,7 @@
           width: `${props.completed}%`,
           backgroundColor: props.bgcolor,
           transition: "width 1s ease-in-out",
-          borderRadius: "inherit",
+          borderRadius: "5px",
           textAlign: "right",
         };
       });
@@ -30,15 +30,14 @@
     },
   };
   </script>
-  
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
+
   <style scoped>
   .container {
-    height: 20px;
     width: 100%;
-    background-color: #e0e0de;
-    border-radius: 50px;
-    margin: 50px;
+    display: flex;
+    border-radius: 60px;
+    background-color: rgba(167, 161, 161, 0.1);
+    height: 16px;
   }
   
   .label {
