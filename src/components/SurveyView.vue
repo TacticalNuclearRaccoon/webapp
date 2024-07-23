@@ -297,12 +297,14 @@ p {
   margin-right: 10px;
   padding: 10px;
   border: none;
-  background: #ddd;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: #fff;
+  font-weight: bold;
   cursor: pointer;
 }
 
 .tabs button.active-tab {
-  background: #333;
+  background: #41015e;
   color: white;
 }
 
