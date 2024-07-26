@@ -4,11 +4,17 @@ import DiagCard from '/Users/deni-kun/Documents/v2/plastik/src/components/DiagCa
 import SurveyView from '/Users/deni-kun/Documents/v2/plastik/src/components/SurveyView.vue';
 import FormsView from '/Users/deni-kun/Documents/v2/plastik/src/components/FormsView.vue';
 import CarouselMenu from '@/components/CarouselMenu.vue';
+import BoardView from '@/components/onboarding/BoardView.vue';
 
 const routes = [
   {
     path: '/',
     name: 'Home',
+    component: BoardView  
+  },
+  {
+    path: '/diagcard',
+    name: 'DiagCaard',
     component: DiagCard
   },
   {

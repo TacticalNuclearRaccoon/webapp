@@ -22,7 +22,7 @@
           backgroundColor: props.bgcolor,
           transition: "width 1s ease-in-out",
           borderRadius: "5px",
-          textAlign: "right",
+          textAlign: "right"
         };
       });
   
