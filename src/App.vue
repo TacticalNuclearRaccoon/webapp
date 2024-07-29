@@ -6,8 +6,6 @@
 </template>
 
 <script setup>
-//import DiagCard from './components/DiagCard.vue'
-//import SurveyView from './components/SurveyView.vue';
 
 </script>
 

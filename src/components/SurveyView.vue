@@ -26,9 +26,12 @@
         </div>
         <div v-else>
           <h2>{{ currentPlanetName }}</h2>
-          <div class="main-text" v-if="getCurrentQuestion">
+          <div ref="mainTextRef" class="main-text" v-if="getCurrentQuestion" v-hammer="swipeEvents">
             <span>{{ getCurrentQuestion.question }}</span>
+            <div class="swipe-feedback" :class="feedbackClass" v-if="showFeedback">
+              <span>{{ feedbackText }}</span>
           </div>
+        </div>
           <div v-if="getCurrentQuestion">
             <div class="wrapper">
               <div class="radio-item" v-for="(option, index) in getCurrentQuestion.options" :key="index">
@@ -59,6 +62,8 @@ import { useRoute } from 'vue-router';
 import axios from 'axios';
 import ProgressBar from '@/components/ProgressBar.vue';
 import CircularProgress from '@/components/CircularProgress.vue';
+import Hammer from 'hammerjs';
+import { debounce } from '@/utils/debounce';
 
 const router = useRouter();
 const route = useRoute();
@@ -69,10 +74,43 @@ const currentQuestion = ref(0);
 const loading = ref(true);
 const ediag = diagName.value;
 const currentPlanet = ref(null);
+const mainTextRef = ref(null);
+const showFeedback = ref(false);
+const feedbackText = ref('');
+const feedbackClass = ref('');
+
+const onSwipeLeft = debounce(() => handleSwipe(0), 300);
+const onSwipeRight = debounce(() => handleSwipe(3), 300);
+const onSwipeUp = debounce(() => handleSwipe(1), 300);
+const onSwipeDown = debounce(() => handleSwipe(2), 300);
+
+const swipeEvents = {
+  swipeleft: onSwipeLeft,
+  swiperight: onSwipeRight,
+  swipeup: onSwipeUp,
+  swipedown: onSwipeDown
+};
+
+function handleSwipe(optionIndex) {
+  const question = getCurrentQuestion.value;
+  if (question && question.options[optionIndex] !== undefined) {
+    feedbackText.value = question.options[optionIndex];
+    feedbackClass.value = `active option-${optionIndex}`;
+    showFeedback.value = true;
+
+    setAnswer(optionIndex);
+    handleAnswerChange(optionIndex);
+
+    setTimeout(() => {
+      showFeedback.value = false;
+      feedbackClass.value = '';
+    }, 1000); // Hide feedback after 1 second
+  }
+}
 
 const fetchQuestions = async () => {
   try {
-    const response = await axios.get(`http://localhost:3000/${ediag}`);
+    const response = await axios.get(`http://192.168.1.24:3000/${ediag}`);
     const groupedQuestions = response.data.reduce((acc, question) => {
       if (!acc[question.planet]) {
         acc[question.planet] = [];
@@ -107,6 +145,16 @@ const saveAnswers = async () => {
 
 onMounted(() => {
   fetchQuestions(route.params.diagName);
+  if (mainTextRef.value) {
+    const hammer = new Hammer(mainTextRef.value);
+
+    hammer.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+
+    hammer.on('swipeleft', () => handleSwipe(0));
+    hammer.on('swiperight', () => handleSwipe(3));
+    hammer.on('swipeup', () => handleSwipe(1));
+    hammer.on('swipedown', () => handleSwipe(2));
+  }
 });
 
 watch(route, (newRoute) => {
@@ -304,6 +352,7 @@ const planetProgress = computed(() => {
 }
 
 .main-text {
+  position: relative;
   width: 50vw;
   height: 50vh;
   padding: 2%;
@@ -323,6 +372,44 @@ const planetProgress = computed(() => {
 
 .main-text span {
   padding: 10%;
+}
+
+.swipe-feedback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  font-size: 24px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.swipe-feedback.active {
+  opacity: 1;
+}
+
+.swipe-feedback.option-0 {
+  background-color: green;
+}
+
+.swipe-feedback.option-1 {
+  background-color: blue;
+}
+
+.swipe-feedback.option-2 {
+  background-color: yellow;
+}
+
+.swipe-feedback.option-3 {
+  background-color: red;
 }
 
 .wrapper {
