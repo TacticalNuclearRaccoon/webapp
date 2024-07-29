@@ -14,10 +14,10 @@
               {{ planet }}
             </button>
           </div>
-        </div>
-        <div class="progress-container">
-          <ProgressBar :bgcolor="'#ff5f6d'" :completed="surveyProgress" />
-          <span></span>
+          <div class="progress-container">
+              <ProgressBar :bgcolor="'#ff5f6d'" :completed="surveyProgress" />
+              <span></span>
+            </div>
         </div>
       </div>
       <div class="main-container">
@@ -32,7 +32,7 @@
           <div v-if="getCurrentQuestion">
             <div class="wrapper">
               <div class="radio-item" v-for="(option, index) in getCurrentQuestion.options" :key="index">
-                <input type="radio" :id="'radio' + index" :name="getCurrentQuestion.index" :value="index" v-model="getCurrentQuestion.selected" @change="handleAnswerChange" />
+                <input type="radio" :id="'radio' + index" :name="getCurrentQuestion.index" :value="index" v-model="getCurrentQuestion.selected" @change="handleAnswerChange(index)" />
                 <label :for="'radio' + index">{{ option }}</label>
               </div>
             </div>
@@ -42,15 +42,17 @@
       </div>
     </section>
     <section v-else-if="diagCompleted">
-      <h2>e-Diagnostic terminé</h2>
-      <p>Merci beaucoup</p>
-      <button class="next-btn" @click="router.push({ name: 'Forms' })">Suivant</button>
+      <div class="last-page">
+        <h2>e-Diagnostic terminé</h2>
+        <p>Merci beaucoup</p>
+        <button class="next-btn" @click="router.push({ name: 'Forms' })">Suivant</button>
+      </div>
     </section>
   </div>
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue';
+import { reactive, ref, computed, onMounted, watch } from 'vue';
 import { store } from '@/store';
 import { useRouter } from 'vue-router';
 import { useRoute } from 'vue-router';
@@ -61,7 +63,7 @@ import CircularProgress from '@/components/CircularProgress.vue';
 const router = useRouter();
 const route = useRoute();
 const diagName = computed(() => store.diagName);
-const questions = ref({});
+const questions = reactive({});
 const diagCompleted = ref(false);
 const currentQuestion = ref(0);
 const loading = ref(true);
@@ -78,7 +80,7 @@ const fetchQuestions = async () => {
       acc[question.planet].push({ ...question, selected: null });
       return acc;
     }, {});
-    questions.value = groupedQuestions;
+    Object.assign(questions, groupedQuestions);
     if (planets.value.length > 0) {
       currentPlanet.value = planets.value[0];
     }
@@ -95,7 +97,7 @@ watch(diagName, (newVal) => {
 
 const saveAnswers = async () => {
   try {
-    const UserAnswers = Object.values(questions.value).flat().map((q) => ({ question: q.question, answer: q.selected }));
+    const UserAnswers = Object.values(questions).flat().map((q) => ({ question: q.question, answer: q.selected }));
     await axios.post('http://localhost:3000/answers', UserAnswers);
     console.log('Answers saved successfully');
   } catch (error) {
@@ -111,9 +113,9 @@ watch(route, (newRoute) => {
   fetchQuestions(newRoute.params.diagName);
 });
 
-const planets = computed(() => Object.keys(questions.value));
+const planets = computed(() => Object.keys(questions));
 const currentPlanetName = computed(() => currentPlanet.value);
-const currentPlanetQuestions = computed(() => questions.value[currentPlanet.value] || []);
+const currentPlanetQuestions = computed(() => questions[currentPlanet.value] || []);
 
 const getCurrentQuestion = computed(() => {
   if (!currentPlanetQuestions.value || currentPlanetQuestions.value.length === 0) return null;
@@ -124,8 +126,8 @@ const getCurrentQuestion = computed(() => {
 
 const stateZero = computed(() => !getCurrentQuestion.value);
 
-const setAnswer = (evt) => {
-  questions.value[currentPlanet.value][currentQuestion.value].selected = evt.target.value;
+const setAnswer = (index) => {
+  questions[currentPlanet.value][currentQuestion.value].selected = index;
 };
 
 const nextQuestion = () => {
@@ -143,12 +145,12 @@ const nextQuestion = () => {
   }
 };
 
-const handleAnswerChange = async (evt) => {
-  setAnswer(evt);
+const handleAnswerChange = async (index) => {
+  setAnswer(index);
 
   // Save the current answer to the server
   try {
-    const UserAnswers = Object.values(questions.value).flat().map((q) => ({
+    const UserAnswers = Object.values(questions).flat().map((q) => ({
       question: q.question,
       answer: q.selected,
     }));
@@ -168,7 +170,7 @@ const selectPlanet = (planet) => {
 };
 
 const isSurveyComplete = computed(() => {
-  return Object.values(questions.value).flat().every(q => q.selected !== null);
+  return Object.values(questions).flat().every(q => q.selected !== null);
 });
 
 const goBack = () => {
@@ -178,11 +180,11 @@ const goBack = () => {
     const currentIndex = planets.value.indexOf(currentPlanet.value);
     if (currentIndex > 0) {
       currentPlanet.value = planets.value[currentIndex - 1];
-      currentQuestion.value = questions.value[currentPlanet.value].length - 1;
+      currentQuestion.value = questions[currentPlanet.value].length - 1;
     }
   }
-  if (questions.value[currentPlanet.value][currentQuestion.value].selected !== null) {
-    questions.value[currentPlanet.value][currentQuestion.value].selected = null;
+  if (questions[currentPlanet.value][currentQuestion.value].selected !== null) {
+    questions[currentPlanet.value][currentQuestion.value].selected = null;
   }
 };
 
@@ -191,15 +193,15 @@ const getButtonText = () => {
 };
 
 const surveyProgress = computed(() => {
-  const totalQuestions = Object.values(questions.value).flat().length;
-  const answeredQuestions = Object.values(questions.value).flat().filter(q => q.selected !== null).length;
+  const totalQuestions = Object.values(questions).flat().length;
+  const answeredQuestions = Object.values(questions).flat().filter(q => q.selected !== null).length;
   return Math.round((answeredQuestions / totalQuestions) * 100);
 });
 
 const planetProgress = computed(() => {
   const progress = {};
   planets.value.forEach((planet) => {
-    const planetQuestions = questions.value[planet];
+    const planetQuestions = questions[planet];
     const totalQuestions = planetQuestions.length;
     const answeredQuestions = planetQuestions.filter(q => q.selected !== null).length;
     progress[planet] = Math.round((answeredQuestions / totalQuestions) * 100);
@@ -211,12 +213,34 @@ const planetProgress = computed(() => {
 
 <style scoped>
 .survey-container {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.last-page {
+  text-align: center;
+  align-items: center;
+  width: 90vw;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+}
+
+.next-btn{
+  background: linear-gradient(90deg, #8e2de2, #4a00e0), rgba(74, 0, 224, 0.1);
+  padding: 10px 20px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-weight: 100;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .survey-content {
@@ -229,13 +253,9 @@ const planetProgress = computed(() => {
 .side-container {
   margin-top: 50px;
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  padding-right: 20px;
-  border-right: 2px solid #ece9e9;
   height: 100%;
   overflow-y: auto;
-  width: 15%;
 }
 
 .tabs {
@@ -350,7 +370,6 @@ label:hover {
   border-radius: 40px;
   background-color: rgba(243, 99, 17, 0.1);
   height: 16px;
-  margin-bottom: 10px;
 }
 
 .btn-grad {

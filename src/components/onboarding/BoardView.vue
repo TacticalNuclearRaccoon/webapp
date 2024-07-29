@@ -42,7 +42,7 @@ const nextContent = () => {
       if (currentIndex.value < elements.length - 1) {
         currentIndex.value++;
       } else {
-        router.push({ name: 'DiagCaard' });
+        router.push({ name: 'DiagCard' });
       }
     }
 
