@@ -32,7 +32,7 @@
   </script>
 
   <style scoped>
-  .container {
+   .container {
     width: 100%;
     display: flex;
     border-radius: 60px;

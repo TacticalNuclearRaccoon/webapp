@@ -97,6 +97,8 @@
       ],
       "options": [
         "oui",
+        "plutôt oui",
+        "plutôt non",
         "non"
       ]
     },
@@ -3420,5 +3422,56 @@
       ]
     }
   ],
-  "answers": []
+  "answers": [],
+  "userInfo": [
+    {
+      "id": "a339",
+      "prenom": "Deniz",
+      "nom": "Pekin",
+      "secteur": "porno",
+      "email": "deniz.pekin@protonmail.com"
+    },
+    {
+      "id": "dff4",
+      "prenom": "Deniz",
+      "nom": "Pekin",
+      "secteur": "opera",
+      "email": "deniz.pekin@protonmail.com"
+    },
+    {
+      "id": "6551",
+      "prenom": "",
+      "nom": "",
+      "secteur": "",
+      "email": ""
+    },
+    {
+      "id": "c8ca",
+      "prenom": "",
+      "nom": "",
+      "secteur": "",
+      "email": ""
+    },
+    {
+      "id": "5404",
+      "prenom": "",
+      "nom": "",
+      "secteur": "",
+      "email": ""
+    },
+    {
+      "id": "430f",
+      "prenom": "Deniz",
+      "nom": "Pekin",
+      "secteur": "opera",
+      "email": "deniz.pekin@protonmail.com"
+    },
+    {
+      "id": "52af",
+      "prenom": "Jon",
+      "nom": "Doe",
+      "secteur": "opera",
+      "email": "test@example.us"
+    }
+  ]
 }

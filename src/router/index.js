@@ -5,6 +5,7 @@ import SurveyView from '/Users/deni-kun/Documents/v2/plastik/src/components/Surv
 import FormsView from '/Users/deni-kun/Documents/v2/plastik/src/components/FormsView.vue';
 import CarouselMenu from '@/components/CarouselMenu.vue';
 import BoardView from '@/components/onboarding/BoardView.vue';
+import CompletionView from '@/components/CompletionView.vue';
 
 const routes = [
   {
@@ -14,7 +15,7 @@ const routes = [
   },
   {
     path: '/diagcard',
-    name: 'DiagCaard',
+    name: 'DiagCard',
     component: DiagCard
   },
   {
@@ -31,6 +32,11 @@ const routes = [
     path: '/carousel',
     name: 'Menu',
     component: CarouselMenu
+  },
+  {
+    path: '/completion',
+    name: 'CompletionView',
+    component: CompletionView
   }
 ];
 
