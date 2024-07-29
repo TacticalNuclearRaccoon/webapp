@@ -252,8 +252,11 @@ const planetProgress = computed(() => {
 }
 
 .tabs button {
+  width: 50vw;
+  height: auto;
   margin-bottom: 10px;
   padding: 10px;
+  border-radius: 5px;
   border: none;
   background-color: #ece9e9;
   cursor: pointer;
@@ -306,13 +309,13 @@ const planetProgress = computed(() => {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 2px;
 }
 
 .radio-item {
   position: relative;
   flex: 1 1 calc(50% - 20px); /* Two columns */
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 input[type="radio"] {
@@ -352,7 +355,7 @@ label:hover {
 
 .btn-grad {
   background-image: linear-gradient(90deg, #ff5f6d, #ffc371);
-  padding: 10px 40px;
+  padding: 10px 20px;
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
@@ -361,26 +364,13 @@ label:hover {
   border-radius: 10px;
   display: block;
   font-weight: 100;
-  font-size: 1.25rem;
+  font-size: 1rem;
   cursor: pointer;
   margin-top: 20px;
 }
 
 .btn-grad:disabled {
   opacity: 0.5;
-}
-
-/* --- animations --- */
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 black;
-  }
-  50% {
-    box-shadow: 0 0 10px black;
-  }
-  100% {
-    box-shadow: 0 0 0 black;
-  }
 }
 
 </style>
