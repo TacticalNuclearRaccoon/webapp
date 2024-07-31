@@ -110,7 +110,7 @@ function handleSwipe(optionIndex) {
 
 const fetchQuestions = async () => {
   try {
-    const response = await axios.get(`http://192.168.1.24:3000/${ediag}`);
+    const response = await axios.get(`http://localhost:3000/${ediag}`);
     const groupedQuestions = response.data.reduce((acc, question) => {
       if (!acc[question.planet]) {
         acc[question.planet] = [];
@@ -260,126 +260,14 @@ const planetProgress = computed(() => {
 </script>
 
 <style scoped>
-.survey-container {
-    display: flex;
-    width: auto;
-    height: auto;
-}
-
-.last-page {
-  text-align: center;
-  align-items: center;
-  width: 90vw;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.next-btn{
-  background: linear-gradient(90deg, #8e2de2, #4a00e0), rgba(74, 0, 224, 0.1);
-  padding: 10px 20px;
-  text-align: center;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
-  font-weight: 100;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.survey-content {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-}
-
-.side-container {
-  margin-top: 50px;
-  display: flex;
-  align-items: flex-start;
-  height: 100%;
-  overflow-y: auto;
-}
-
-.tabs {
-  margin-top: 0px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.planet-tab {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0px;
-}
-
-.tabs button {
-  width: 50vw;
-  height: auto;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #ece9e9;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.tabs button.active-tab {
-  background-color: #dcdcdc;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 75%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.main-container h2 {
-  text-align: center;
-  font-family: 'Azo Sans';
-}
-
-.main-text {
-  position: relative;
-  width: 50vw;
-  height: 50vh;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0px 14px 44px rgba(37, 0, 112, 0.2);
-  border-radius: 8px;
-  background-color: #fff;
-  text-align: center;
-  font-size: 24px;
-  color: #250070;
-  font-family: 'Azo Sans';
-  margin-bottom: 20px;
-  box-sizing: border-box;
-}
-
-.main-text span {
-  padding: 10%;
-}
-
+/* ....swipe styles.... */
 .swipe-feedback {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  animation-timing-function: linear;
   align-items: center;
   justify-content: center;
   width: 100px;
@@ -387,7 +275,7 @@ const planetProgress = computed(() => {
   border-radius: 50%;
   background-color: green;
   color: white;
-  font-size: 24px;
+  font-size: 16px;
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
 }
@@ -412,71 +300,218 @@ const planetProgress = computed(() => {
   background-color: red;
 }
 
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2px;
+/* ....main styles.... */
+
+.survey-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+.last-page {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.next-btn {
+    background: linear-gradient(90deg, #8e2de2, #4a00e0), rgba(74, 0, 224, 0.1);
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 100;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.survey-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.side-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.planet-tab {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.tabs button {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ece9e9;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tabs button.active-tab {
+    background-color: #dcdcdc;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-container h2 {
+    text-align: center;
+    font-family: 'Azo Sans';
+}
+
+.main-text {
+    width: 90%;
+    height: auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 14px 44px rgba(37, 0, 112, 0.2);
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 18px;
+    color: #250070;
+    font-family: 'Azo Sans';
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.main-text span {
+    padding: 10%;
+}
+
+/* .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2px;
+}
+ */
 .radio-item {
-  position: relative;
-  flex: 1 1 calc(50% - 20px); /* Two columns */
-  margin-bottom: 2px;
+    position: relative;
+    flex: 1 1 calc(50% - 20px); /* Two columns */
+    margin-bottom: 5px;
 }
 
 input[type="radio"] {
-  display: none; /* Hide the default radio button */
+    display: none; /* Hide the default radio button */
 }
 
 label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s;
-  background-color: #f2f2f2;
-  width: 100%;
-  box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #f2f2f2;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input[type="radio"]:checked + label {
-  border-color: #ff5f6d; /* Change border color when selected */
-  background-color: #ffe6e6; /* Change background color when selected */
+    border-color: #ff5f6d; /* Change border color when selected */
+    background-color: #ffe6e6; /* Change background color when selected */
 }
 
 label:hover {
-  background-color: #e6e6e6; /* Change background on hover */
+    background-color: #e6e6e6; /* Change background on hover */
 }
 
 .progress-container {
-  width: 100%;
-  border-radius: 40px;
-  background-color: rgba(243, 99, 17, 0.1);
-  height: 16px;
+    width: 100%;
+    border-radius: 40px;
+    background-color: rgba(243, 99, 17, 0.1);
+    height: 16px;
 }
 
 .btn-grad {
-  background-image: linear-gradient(90deg, #ff5f6d, #ffc371);
-  padding: 10px 20px;
-  text-align: center;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
-  font-weight: 100;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 20px;
+    background-image: linear-gradient(90deg, #ff5f6d, #ffc371);
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 100;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .btn-grad:disabled {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
+/* Media Queries */
+@media (min-width: 768px) {
+    .survey-content {
+        flex-direction: row;
+    }
+
+    .side-container {
+        margin-top: 50px;
+        width: 25%;
+    }
+
+    .main-container {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .tabs button {
+        font-size: 18px;
+    }
+
+    .main-text {
+        width: 50vw;
+        font-size: 24px;
+    }
+
+    .radio-item {
+        flex: 1 1 calc(25% - 20px); /* Four columns */
+    }
+}
 </style>
