@@ -1,0 +1,821 @@
+{
+    "id": 1,
+    "theme": {
+        "id": 1,
+        "name": "Collaborer en équipe",
+        "logo": ""
+    },
+    "planets": [
+        {
+            "id": 1,
+            "title": "Raison d'être",
+            "description": "La raison d'être d'une équipe est de créer de la valeur pour le produit ou le service qu'elle construit.",
+            "dysfunctions": [
+                {
+                    "id": 1,
+                    "label": "L'équipe ne s'approprie pas assez le sens métier",
+                    "criteria": [],
+                    "weight": 64,
+                    "questions": [
+                        {
+                            "id": 1,
+                            "label": "L'équipe comprend-elle le sens du produit / service ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 2,
+                            "label": "Challenge-t-elle le fonctionnement du service ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe, qui ne comprend pas le sens métier du produit/service qu'elle construit, ne pourra pas mettre au cœur de ces priorités les besoins de l'utilisateur et elle sera moins efficace dans son développement."
+                },
+                {
+                    "id": 2,
+                    "label": "La valeur du produit / service reste abstraite pour l'équipe",
+                    "criteria": [],
+                    "weight": 38,
+                    "questions": [
+                        {
+                            "id": 3,
+                            "label": "Priorise-t-elle ces tâches en fonction de celles qui ont le plus de valeur pour l'utilisateur ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 4,
+                            "label": "L'aspect technique est-il plus mis en avant que les demandes ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une équipe qui ne cherche pas à produire de la valeur peut avoir comme résultat un produit/service pas ou peu utilisé."
+                }
+            ],
+            "order": 1
+        },
+        {
+            "id": 5,
+            "title": "Collaboration",
+            "description": "La collaboration d'une équipe nécessite pour la conduite d'un produit / service de la confiance, de la coopération, de l'innovation et de l'anticipation.",
+            "dysfunctions": [
+                {
+                    "id": 3,
+                    "label": "L'équipe n'anticipe pas assez",
+                    "criteria": [],
+                    "weight": 39,
+                    "questions": [
+                        {
+                            "id": 5,
+                            "label": "Votre équipe est-elle régulièrement bloquée dans son quotidien?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 6,
+                            "label": "Travaille-t-elle avec un rythme trop soutenu ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 7,
+                            "label": "Fait-elle face à beaucoup d'imprévus ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 9,
+                            "label": "Avez-vous du mal à suivre le flux de travail ?\"",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 11,
+                            "label": "Quand l'équipe prend une décision, prend-elle en compte le risque ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 8,
+                            "label": "Arrive-t-elle à faire en sorte que les perturbations deviennent des \\\"non évènements\\\" ?\"",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 10,
+                            "label": "Votre équipe prévoit-elle une gestion des retards, des tâches mises sur le côté ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 12,
+                            "label": "Est-ce qu'elle prend en compte les absences de chacun dans sa charge de travail ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 13,
+                            "label": "Garde-t-elle une marge de manoeuvre pour gérer les imprévus ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui n'anticipe pas pourra se retrouver dans l'urgence et peut avoir l'impression de courir un marathon quotidiennement. Cela augmente le risque d'erreur, de fatigue ou de motivation de l'équipe."
+                },
+                {
+                    "id": 4,
+                    "label": "Majorité de membres individualistes",
+                    "criteria": [],
+                    "weight": 17,
+                    "questions": [
+                        {
+                            "id": 14,
+                            "label": "Avez-vous aidé un membre de votre équipe récemment ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 15,
+                            "label": "Lors de l'arrivée d'une nouvelle personne dans l'équipe, existe-t-il un processus d'intégration ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 16,
+                            "label": "Est-ce que vous vous considérez comme le meilleur ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 18,
+                            "label": "Est-ce que les membres de votre équipe ont les mêmes objectifs que vous ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une équipe qui ne collabore pas et ne s'entraide pas ne pourra pas délivrer correctement de la valeur à l'utilisateur."
+                },
+                {
+                    "id": 5,
+                    "label": "L'équipe n'ose pas",
+                    "criteria": [],
+                    "weight": 2,
+                    "questions": [
+                        {
+                            "id": 19,
+                            "label": "Avez-vous le sentiment d'être bloqué ou de ne pas pouvoir prendre des initiatives ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 20,
+                            "label": "Est-ce que l'équipe a les moyens de résoudre le ou les problèmes ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 21,
+                            "label": "Le fait-elle ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 22,
+                            "label": "Avez-vous la possibilité de dire non ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui n'ose pas pourra avoir peur de sortir des nouvelles fonctionnalités ce qui peut nuire à sa productivité et à sa création de valeur."
+                }
+            ],
+            "order": 2
+        },
+        {
+            "id": 6,
+            "title": "Autonomie",
+            "description": "L'autonomie d'une équipe est importante dans la réalisation d'un produit/service, elle doit être auto-organisée, pluridisciplinaire avec des membres complémentaires",
+            "dysfunctions": [
+                {
+                    "id": 6,
+                    "label": "En l'absence d'un membre, l'équipe est fortement ralentie",
+                    "criteria": [],
+                    "weight": 47,
+                    "questions": [
+                        {
+                            "id": 26,
+                            "label": "Peut-elle fonctionner en cas d'absence de l'un de ses membres ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 27,
+                            "label": "En cas d'absence d'un membre de l'équipe, arrive-t-il qu'un processus soit bloqué ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 28,
+                            "label": "En cas d'absence d'un membre de l'équipe, existe-t-il une personne qui a la même compétence ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui n'ose pas pourra avoir peur de sortir des nouvelles fonctionnalités ce qui peut nuire à sa productivité et à sa création de valeur."
+                },
+                {
+                    "id": 7,
+                    "label": "Le produit / le service ne possède pas l'entièreté des compétences pour son bon fonctionnement",
+                    "criteria": [],
+                    "weight": 45,
+                    "questions": [
+                        {
+                            "id": 23,
+                            "label": "Est-ce que l'équipe possède les compétences nécessaires pour construire / améliorer le produit/service ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 24,
+                            "label": "Le produit/service est-il construit en se basant sur les compétences de chaque membre de l'équipe ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 25,
+                            "label": "L'équipe possède-t-elle des processus qui peuvent la bloquer dans son quotidien ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Les compétences des individus doivent être en adéquation avec le produit / service sinon celui-ci ne pourra pas être développé de façon sereine et correcte."
+                },
+                {
+                    "id": 8,
+                    "label": "L'équipe dit oui à tout",
+                    "criteria": [],
+                    "weight": 42,
+                    "questions": [
+                        {
+                            "id": 29,
+                            "label": "L'équipe dit-elle oui à tout ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 30,
+                            "label": "Continue-t-elle à accepter des nouvelles tâches alors qu'elle semble être débordée ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une équipe qui dit oui à tout pourra se retrouver en surcharge et ne répondra plus au besoin de ses interlocuteurs."
+                },
+                {
+                    "id": 9,
+                    "label": "L'équipe est trop grande",
+                    "criteria": [],
+                    "weight": 38,
+                    "questions": [
+                        {
+                            "id": 31,
+                            "label": "Est-ce que l'équipe comporte trop de membres ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une équipe trop grande ne pourra pas produire efficacement si le périmètre n'est pas bien défini. Les membres de cette équipe vont se gêner les uns les autres dans le développement du produit/service."
+                },
+                {
+                    "id": 10,
+                    "label": "L'équipe dit non à tout",
+                    "criteria": [],
+                    "weight": 11,
+                    "questions": [
+                        {
+                            "id": 32,
+                            "label": "Refuse-t-elle systématiquement les demandes ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une équipe qui dit non à tout ne pourra pas avancer et cela sera mal perçu d'un point de vue utilisateur. Cela peut démobiliser les membres de l'équipe."
+                }
+            ],
+            "order": 3
+        },
+        {
+            "id": 2,
+            "title": "Équilibre",
+            "description": "Le bon fonctionnement d'une équipe se base sur un équilibre.",
+            "dysfunctions": [
+                {
+                    "id": 17,
+                    "label": "L'équipe est bridée par le management",
+                    "criteria": [],
+                    "weight": 34,
+                    "questions": [
+                        {
+                            "id": 50,
+                            "label": "Faut-il une validation du manager pour prendre une décision ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Un manager dans une posture de contrôle ne pourra pas laisser l'équipe prendre sa place dans le développement du produit/service. Cela peut avoir comme conséquence une démobilisation de l'équipe et une perte de motivation."
+                },
+                {
+                    "id": 16,
+                    "label": "Une personne impose régulièrement des décisions",
+                    "criteria": [],
+                    "weight": 55,
+                    "questions": [
+                        {
+                            "id": 49,
+                            "label": "Quelqu'un décide-t-il de tout pour l'équipe ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une personne, qui décide de tout, rendra une équipe dépendante de cette personne avec les risques que cela comporte la démobilisation, goulot d'étranglement ou baisse de motivation, etc..."
+                },
+                {
+                    "id": 18,
+                    "label": "Un des membres de l'équipe se met trop en avant sur son domaine de compétences",
+                    "criteria": [],
+                    "weight": 26,
+                    "questions": [
+                        {
+                            "id": 55,
+                            "label": "Est-elle exigeante et passe-t-elle du temps à parfaire ce qu'elle fait ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Si l'un des membres de l'équipe fait un excès de zèle cela peut avoir comme impact une baisse de la productivité de l'équipe voir même la création d'un goulot d'étranglement."
+                },
+                {
+                    "id": 19,
+                    "label": "L'équipe a trop de leaders",
+                    "criteria": [],
+                    "weight": 20,
+                    "questions": [
+                        {
+                            "id": 52,
+                            "label": "Lorsqu'elle prend des décisions, qu'elle priorise ou lorsqu'elle effectue ses tâches arrive-t-il que l'équipe s'éparpille ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 53,
+                            "label": "Met-elle du temps à prendre une décision ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une équipe qui a une multitude de leaders n'aura pas une seule direction mais plusieurs vers laquelle avancer. Au final cette équipe ne pourra pas se décider et être réellement productive."
+                },
+                {
+                    "id": 20,
+                    "label": "L'équipe n'a pas de leader",
+                    "criteria": [],
+                    "weight": 12,
+                    "questions": [
+                        {
+                            "id": 54,
+                            "label": "Attend-elle une personne interne ou externe à l'équipe pour avancer ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une équipe qui n'a pas de leader va être en attente de direction. Une équipe qui n'a pas de leader va être en attente de direction. Elle ne saura pas quoi faire."
+                }
+            ],
+            "order": 6
+        },
+        {
+            "id": 4,
+            "title": "Objectifs",
+            "description": "Une équipe doit être capable de se fixer ses propres objectifs et se donner les moyens de les atteindre.",
+            "dysfunctions": [
+                {
+                    "id": 21,
+                    "label": "L'équipe n'a pas d'objectifs priorisés",
+                    "criteria": [],
+                    "weight": 58,
+                    "questions": [
+                        {
+                            "id": 56,
+                            "label": "L'équipe possède-t-elle des objectifs clairs et priorisés ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Pas d'objectif, pas de produit. Pas de produit, pas de vente. Pas de vente, pas d'argent. Pas d'argent...pas d'argent."
+                },
+                {
+                    "id": 22,
+                    "label": "Problème d'objectif commun",
+                    "criteria": [],
+                    "weight": 45,
+                    "questions": [
+                        {
+                            "id": 57,
+                            "label": "Les membres de l'équipe partagent-ils le même objectif ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "L'équipe doit avoir un objectif commun, sans cet objectif elle va s'éparpiller et elle ne saura plus dans quelle direction aller."
+                },
+                {
+                    "id": 23,
+                    "label": "L'équipe ne se sent pas responsable",
+                    "criteria": [],
+                    "weight": 42,
+                    "questions": [
+                        {
+                            "id": 58,
+                            "label": "L'équipe se sent-elle responsable pour atteindre ses objectifs ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 59,
+                            "label": "Est-elle animée par son objectif ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui est déresponsabilisée ne prendra plus de décisions concernant son mode de fonctionnement et le produit/service qu'elle développe."
+                },
+                {
+                    "id": 24,
+                    "label": "L'équipe est déresponsabilisée",
+                    "criteria": [],
+                    "weight": 39,
+                    "questions": [
+                        {
+                            "id": 60,
+                            "label": "Est-elle autonome sur ces sujets ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 61,
+                            "label": "Dispose-t-elle des moyens concrets pour atteindre ses objectifs ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui est déresponsabilisée ne prendra plus de décisions concernant son mode de fonctionnement et le produit/service qu'elle développe."
+                },
+                {
+                    "id": 25,
+                    "label": "L'équipe est abandonnée",
+                    "criteria": [],
+                    "weight": 18,
+                    "questions": [
+                        {
+                            "id": 62,
+                            "label": "Est-elle challengée ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui n'a pas de soutien souffrira d'une baisse de productivité et n'aura pas de direction vers laquelle naviguer."
+                }
+            ],
+            "order": 7
+        },
+        {
+            "id": 7,
+            "title": "Transparence",
+            "description": "La transparence dans une équipe est importante car elle permet aux membres de l'équipe d'être dans une connaissance globale du produit sans pour autant être dans l'attente d'informations.",
+            "dysfunctions": [
+                {
+                    "id": 26,
+                    "label": "Les membres d'une équipe ne communiquent pas suffisamment",
+                    "criteria": [],
+                    "weight": 49,
+                    "questions": [
+                        {
+                            "id": 63,
+                            "label": "Les membres de l'équipe ont-ils tous le même niveau d'information ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 64,
+                            "label": "Sont-ils capables de pousser les bonnes informations aux bonnes personnes ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Des membres d'une équipe qui ne communiquent pas suffisamment peuvent provoquer des incompréhensions, des erreurs et des pertes d'informations lors du développement du produit/service."
+                },
+                {
+                    "id": 27,
+                    "label": "L'ambiance n'est pas au beau fixe",
+                    "criteria": [],
+                    "weight": 43,
+                    "questions": [],
+                    "explanation": "Une ambiance malsaine n'aide en rien à la productivité d'une équipe. Cela ne fera que la ralentir voire perdre des membres."
+                },
+                {
+                    "id": 28,
+                    "label": "Des membres de l'équipe font de la rétention d'information",
+                    "criteria": [],
+                    "weight": 42,
+                    "questions": [
+                        {
+                            "id": 65,
+                            "label": "Retiennent-ils volontairement des informations ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Si une partie de l'équipe fait de la rétention d'information alors elle peut être amenée à prendre de mauvaises décisions et à ralentir le développement du produit/service."
+                },
+                {
+                    "id": 29,
+                    "label": "Le comportement d'un individu dérange l'équipe",
+                    "criteria": [],
+                    "weight": 35,
+                    "questions": [
+                        {
+                            "id": 66,
+                            "label": "Pensez-vous qu'un membre de l'équipe agace les autres membres de manière générale ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 67,
+                            "label": "Etes-vous dérangés par l'attitude d'un membre de l'équipe ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Le comportement d'un individu peut déranger l'équipe ce qui peut nuire à sa productivité de cette dernière."
+                },
+                {
+                    "id": 30,
+                    "label": "Les individus sont résignés",
+                    "criteria": [],
+                    "weight": 33,
+                    "questions": [
+                        {
+                            "id": 68,
+                            "label": "Avez-vous déjà ressenti une fatigue extrême dans le contexte de l'équipe ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 69,
+                            "label": "Votre équipe est-elle motivée par ce qu'elle construit ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une attitude de résignation peut amener à un inconfort dans l'équipe et ceci baissera la productivité de cette dernière."
+                },
+                {
+                    "id": 31,
+                    "label": "Les membres de l'équipe ont des non-dits",
+                    "criteria": [],
+                    "weight": 30,
+                    "questions": [
+                        {
+                            "id": 70,
+                            "label": "Les membres de l'équipe se font-ils confiance ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "La transparence et la confiance sont des principes fondamentaux du travail en équipe. En plus de la bienveillance, ces principes permettent une communication plus forte entre les individus, favorisant ainsi l'interaction. La résolution des problèmes, les incohérences et les incompréhensions sont plus rapidement enlevés dans un climat sain."
+                }
+            ],
+            "order": 8
+        },
+        {
+            "id": 8,
+            "title": "Amélioration continue",
+            "description": "L'amélioration continue d'une équipe est une démarche de progrès permettant de tendre vers un fonctionnement optimum pour cela l'équipe doit chercher du feedback.",
+            "dysfunctions": [
+                {
+                    "id": 14,
+                    "label": "L'équipe n'a pas de feedback",
+                    "criteria": [],
+                    "weight": 33,
+                    "questions": [
+                        {
+                            "id": 40,
+                            "label": "Les utilisateurs donnent-ils leur avis sur le produit/service ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 41,
+                            "label": "Les services adjacents ou la direction font-ils des retours constructifs à l'équipe ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 42,
+                            "label": "L'équipe a-t-elle des retours sur son produit/service ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui ne reçoit pas de feedback ne peut pas se remettre en question et ainsi améliorer son mode de fonctionnement. De plus, elle peut perdre le sens de ce qu'elle développe."
+                },
+                {
+                    "id": 11,
+                    "label": "L'équipe ne recherche pas le feedback",
+                    "criteria": [],
+                    "weight": 48,
+                    "questions": [
+                        {
+                            "id": 33,
+                            "label": "L'équipe valide-t-elle avec les utilisateurs le bon fonctionnement du produit ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 34,
+                            "label": "Partage-t-elle les problèmes de fonctionnement qu'elle rencontre ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 35,
+                            "label": "L'équipe se challenge-t-elle dans ses décisions ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui ne recherche pas le feedback ne veut pas s'améliorer et ne se remet pas en cause dans le développement du produit/service. Si une équipe ne veut pas s'améliorer, elle ne répondra pas au besoin des utilisateurs."
+                },
+                {
+                    "id": 12,
+                    "label": "L'équipe se remet rarement en cause",
+                    "criteria": [],
+                    "weight": 42,
+                    "questions": [
+                        {
+                            "id": 36,
+                            "label": "Apprend-elle de ces erreurs ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 37,
+                            "label": "Prend-elle la responsabilité de certains problèmes rencontrés ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui ne se remet jamais en cause, ne pourra pas évoluer vers une organisation optimale et donc avoir un bon niveau de productivité."
+                },
+                {
+                    "id": 13,
+                    "label": "L'équipe n'arrive pas à prioriser les sujets ou les lacunes accumulées",
+                    "criteria": [],
+                    "weight": 37,
+                    "questions": [
+                        {
+                            "id": 38,
+                            "label": "Prend-elle en compte les sujets laissés de côté ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 39,
+                            "label": "L'intègre-t-elle dans son quotidien ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Les sujets ou les lacunes accumulés représentent une dette, plus elle est importante plus elle peut empêcher la création de nouvelles fonctionnalités ou une amélioration du service."
+                }
+            ],
+            "order": 4
+        },
+        {
+            "id": 9,
+            "title": "Stabilité",
+            "description": "La stabilité d'une équipe permet de booster la productivité et d'obtenir des résultats rapide.",
+            "dysfunctions": [
+                {
+                    "id": 32,
+                    "label": "Le turnover est important",
+                    "criteria": [],
+                    "weight": 36,
+                    "questions": [
+                        {
+                            "id": 71,
+                            "label": "Le taux de départ du personnel de l'équipe est-il important ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 72,
+                            "label": "L'équipe a-t-elle connue des variations de taille ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Un turnover important peut avoir pour conséquence une perte de connaissance du périmètre."
+                },
+                {
+                    "id": 33,
+                    "label": "L'équipe prend trop de risques",
+                    "criteria": [],
+                    "weight": 23,
+                    "questions": [
+                        {
+                            "id": 73,
+                            "label": "L'équipe se précipite-t-elle pour améliorer/corriger le produit/service sans vérifier les impacts ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une équipe, qui ne mesure pas les risques qu'elle prend, peut créer un produit/service qui n'est pas attendu par les utilisateurs."
+                },
+                {
+                    "id": 34,
+                    "label": "L'équipe gère trop de produits / services",
+                    "criteria": [],
+                    "weight": 13,
+                    "questions": [
+                        {
+                            "id": 74,
+                            "label": "La charge de travail des produits dépasse-t-elle la capacité de l'équipe ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        }
+                    ],
+                    "explanation": "Une équipe qui gère trop de produits/services ne pourra pas gérer les priorités de chaque produit/service et cela aura pour conséquence de démobiliser les membres ainsi que les utilisateurs."
+                }
+            ],
+            "order": 9
+        },
+        {
+            "id": 10,
+            "title": "Changement",
+            "description": "L'équipe peut subir des changements en terme de membres, de priorité pour le produit. Elle doit s'adapter à celui-ci.",
+            "dysfunctions": [
+                {
+                    "id": 15,
+                    "label": "L'équipe ne s'adapte pas assez au changement",
+                    "criteria": [],
+                    "weight": 35,
+                    "questions": [
+                        {
+                            "id": 43,
+                            "label": "L'équipe arrive-t-elle à prendre en compte les imprévus ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 44,
+                            "label": "Accepte-t-elle de s'adapter au changement ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 45,
+                            "label": "Est-elle déstabilisée lors de changements d'effectifs ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [0, 1]
+                        },
+                        {
+                            "id": 46,
+                            "label": "Accepte-t-elle les changements de priorité du produit/service ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 47,
+                            "label": "Accepte-t-elle les nouveaux processus ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        },
+                        {
+                            "id": 48,
+                            "label": "Accepte-t-elle l'évolution des processus ?",
+                            "responseJson": ["oui", "plutôt oui", "plutôt non", "non"],
+                            "responseTrigger": [2, 3]
+                        }
+                    ],
+                    "explanation": "Une équipe qui ne s'adapte pas au changement ne pourra faire face aux besoins des utilisateurs qui peuvent évoluer."
+                }
+            ],
+            "order": 5
+        }
+    ],
+    "answers": [],
+    "userInfo": []
+}

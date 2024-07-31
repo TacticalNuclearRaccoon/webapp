@@ -6,6 +6,7 @@ import FormsView from '/Users/deni-kun/Documents/v2/plastik/src/components/Forms
 import CarouselMenu from '@/components/CarouselMenu.vue';
 import BoardView from '@/components/onboarding/BoardView.vue';
 import CompletionView from '@/components/CompletionView.vue';
+import TestView from '@/components/TestView.vue';
 
 const routes = [
   {
@@ -37,6 +38,11 @@ const routes = [
     path: '/completion',
     name: 'CompletionView',
     component: CompletionView
+  },
+  {
+    path: '/test',
+    name: 'TestView',
+    component: TestView
   }
 ];
 
